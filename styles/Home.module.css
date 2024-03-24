@@ -1,7 +1,7 @@
 .main {
   display: flex;
   justify-content: center;
-  background-color: var(--inactive);
+  background-color: var(--black-text);
   min-height: 100vh;
   margin: -10px;
 }
@@ -9,7 +9,7 @@
 .screen {
   width: 430px;
   height: 100%;
-  background-color: var(--white);
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -20,7 +20,7 @@
   width: 100%;
 }
 .screen img {
-  background-color: var(--primary);
+  background-color: var(--accent-color);
   width: 100%;
   height: 20rem;
   border-radius: 30px;
@@ -31,7 +31,7 @@
   width: 100%;
   border-radius: 30px;
   height: 10rem;
-  background-color: var(--primary);
+  background-color: var(--accent-color);
   margin: 0.5rem 1rem;
 }
 
@@ -40,29 +40,31 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin-bottom: 40rem;
+  margin-bottom: 10rem;
 }
 
 .item {
   width: 44%;
   height: 10rem;
-  background-color: var(--primary);
+  background-color: var(--accent-color);
   border-radius: 30px;
   margin: 0.5rem;
 }
 
 .header {
-  background-color: var(--secondary);
+  background-color: var(--accent-color);
   height: 9rem;
   width: 430px;
   position: fixed;
   top: 0;
+  z-index: 1000;
 }
 
 .nav {
-  background-color: var(--secondary);
+  background-color: var(--accent-color);
   height: 9rem;
   width: 430px;
   position: fixed;
   bottom: 0;
+  z-index: 1000;
 }
