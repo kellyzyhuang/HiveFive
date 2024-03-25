@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black-text);
+  min-height: 100vh;
+  margin: -10px;
+}
+
+.screen {
+  width: 430px;
+  height: 100%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buffer{
+  height: 10rem;
+  width: 100%;
+}
+
+.userStats {
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.list {
+  display: flex; 
+  list-style-type: none; 
+  gap: 30px; 
+}
+
+.graphs {
+  width: 100%; 
+}
+
+.graph {
+  width: 44%;
+  height: 10rem;
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  margin: 0.5rem;
+  display: block; 
+}
+
+.nav {
+  background-color: var(--accent-color);
+  height: 9rem;
+  width: 430px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}
