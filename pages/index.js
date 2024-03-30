@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Header from '@/components/Header'; 
-
+import NavBar from '@/components/NavBar';
 export default function Home() {
   return (
     <>
@@ -24,7 +24,7 @@ export default function Home() {
               <div className={styles.item}></div>
               <div className={styles.item}></div>
             </div>
-            <nav className={styles.nav}>{/*to be replaced by real nav bar*/}</nav>    
+            <NavBar className={styles.nav}/>
         </div>  
       </main>
     </>
