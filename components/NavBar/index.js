@@ -1,35 +1,42 @@
 import styles from "./NavBar.module.css";
-import Images from "next/Images";
+import Link from "next/link";
 
 export default function NavBar(){
     return(
         <nav className={styles.navBar}>
-            <a href={"/"}>Quiz</a> {/* will change to icon*/}
             <div className={styles.navMenu}>{/* will add */}
             <ul className={styles.navList}>
                 <li className={styles.activity}>
-                    <a href={"/"}>
-                        <img/>
-                        <span className={styles.label}></span>
-                    </a>
+                    <Link href="/">
+                        <div>
+                            <img className={styles.navIcon}/>
+                            <span className={styles.label}>Activity</span>
+                        </div>
+                    </Link>
                 </li>
                 <li className={styles.learnMore}>
-                    <a href={"/"}>
-                        <img/>
-                        <span className={styles.label}></span>
-                    </a>
+                    <Link href="/">
+                        <div>
+                            <img className={styles.navIcon}/>
+                            <span className={styles.label}>Learn</span>
+                        </div>
+                    </Link>
                 </li>
-                <li className={styles.settings}>
-                    <a href="/">
-                        <img/>
-                        <span className={styles.label}></span>
-                    </a>
+                <li className={styles.quiz}>
+                    <Link href={'/Quiz'}>
+                        <div>
+                            <img className={styles.navIcon}/>
+                            Quiz
+                        </div>
+                    </Link>
                 </li>
                 <li className={styles.home}>
-                    <a href={"/"}>
-                        <img/>
-                        <span className={styles.label}></span>
-                    </a>
+                    <Link href="/">
+                        <div>
+                            <img className={styles.navIcon}/>
+                            <span className={styles.label}>Home</span>
+                        </div>
+                    </Link>
                 </li>
             </ul>
             </div>
