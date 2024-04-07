@@ -59,7 +59,7 @@ export default function Quiz() {
           <h1 className={styles.question}>{currentQuestion.question}</h1>
           <img className={styles.speaker}/> 
         </div>
-        <img className={styles.gameBanner}/> 
+        <img className={styles.gameBanner} src={"/images/peekaboo_bee.jpeg"} width={1} height={1}/> 
         <div className={styles.optionContainer}>
           {currentQuestion.options.map((option, index) => (
             <div key={index} className={styles.option} onClick={() => displayAnswer(option)}>
