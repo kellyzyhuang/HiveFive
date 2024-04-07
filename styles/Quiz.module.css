@@ -12,8 +12,11 @@
   }
 
   .question{
-    font-size: 2.125rem;
-    text-align: left;
+    font-size: 1.75rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    line-height: 2.1rem;
+    font-family: 'Besley', serif;
   }
 
   .buffer{
@@ -22,21 +25,20 @@
   }
 
   .speaker {
-    background-color: var(--accent-color);
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .gameBanner {
     width: 100%;
     background-color: var(--accent-color);
-    height: 10rem;
+    height: 16rem;
     margin: 2rem 0;
   }
 
   .questionHead {
     display: flex;
-    width: 13rem;
+    width: 90%;
     align-items: center;
     justify-content: space-between;
   }
@@ -60,50 +62,10 @@
 
   .microphone {
     background-color: var(--accent-color);
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
     margin: 2rem 0;
+    padding: 1rem;
     border-radius: 50%;
   }
 
-  .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-  }
-  
-  .popupContent {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .close {
-    float: right;
-    font-size: 28px;
-  }
-  
-  .correct {
-    color: green;
-  }
-  
-  .incorrect {
-    color: red;
-  }
-  
-  .nextButton {
-    padding: 10px;
-    background-color: rgb(221, 166, 36);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
