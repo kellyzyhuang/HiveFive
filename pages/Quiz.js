@@ -1,28 +1,81 @@
 import { useState } from "react";
-{/*import { quiz } from './data/inventory.js'; */}
+import { quiz } from '../data/inventory.js';
 import Header from "@/components/Header/index.js";
-import styles from "@/styles/Quiz.module.css"
+import styles from "@/styles/Quiz.module.css";
+import QuizResults from "@/components/QuizResults";
+import QuizPopup from "@/components/QuizPopup"; 
 
 export default function Quiz() {
-  return(
+  const [currentQuestionNumber, setCurrentQuestionNumber] = useState(0);
+  const [points, setPoints] = useState(0);
+  const [popup, setPopup] = useState(false);
+  const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
+  const [correctAnswersTotal, setCorrectAnswersTotal] = useState(0);
+  const [quizComplete, setQuizComplete] = useState(false);
+  const currentQuestion = quiz.questions[currentQuestionNumber];
+
+  const displayAnswer = (option) => {
+    const isCorrect = option == currentQuestion.answer;
+    setIsCorrectAnswer(isCorrect);
+    setPopup(true);
+  
+    if (isCorrect) {
+      setPoints(points + 5);
+      setCorrectAnswersTotal(correctAnswersTotal + 1);
+    }
+  };
+
+  const nextQuestion = () => {
+    setPopup(false); 
+    const nextQuestionIndex = currentQuestionNumber + 1;
+    
+    if (nextQuestionIndex < quiz.questions.length) {
+      setCurrentQuestionNumber(nextQuestionIndex);
+    } else {
+      setQuizComplete(true); 
+    }
+  };
+
+  const restartQuiz = () => {
+    setCurrentQuestionNumber(0);
+    setCorrectAnswersTotal(0);
+    setQuizComplete(false);
+  };
+
+  if (quizComplete) {
+    return <QuizResults 
+             correctAnswersTotal={correctAnswersTotal} 
+             questionCount={quiz.questions.length}
+             onRestart={restartQuiz}
+            />;
+  }; 
+
+  return (
     <>
-      
       <div className={styles.screen}>
         <Header title="Quiz"/>
         <div className={styles.buffer}></div>
         <div className={styles.questionHead}>
-          <h1 className={styles.question} >Question</h1>
-          <img className={styles.speaker}/>
+          <h1 className={styles.question}>{currentQuestion.question}</h1>
+          <img className={styles.speaker}/> 
         </div>
-        <img className={styles.gameBanner}/>
+        <img className={styles.gameBanner}/> 
         <div className={styles.optionContainer}>
-          <div className={styles.option}><p>1.</p></div>
-          <div className={styles.option}><p>2.</p></div>
-          <div className={styles.option}><p>3.</p></div>
-          <div className={styles.option}><p>4.</p></div>
+          {currentQuestion.options.map((option, index) => (
+            <div key={index} className={styles.option} onClick={() => displayAnswer(option)}>
+              <p>{index + 1}. {option}</p>
+            </div>
+          ))}
         </div>
-        <img className={styles.microphone}></img>
+        {popup && (
+          <QuizPopup 
+            isCorrect={isCorrectAnswer}
+            answer={currentQuestion.answer}
+            onNextQuestion={nextQuestion}
+          />
+        )}
+        <img className={styles.microphone}></img> 
       </div>
     </>
-  )
+  );
 }
