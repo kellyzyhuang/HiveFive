@@ -3,6 +3,9 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Header from '@/components/Header'; 
 import NavBar from '@/components/NavBar';
+import Landing from './Landing';
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <>
@@ -18,8 +21,12 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.screen}>
           <Header title="Home"/>
+
           <div className={styles.buffer}></div>
-            <img/>
+            <img/> 
+          <button>
+            <Link href="/Landing">tutorial</Link>
+          </button>
             <div className={styles.activityGraph}></div>
             <div className={styles.gallery}>
               <div className={styles.item}></div>
