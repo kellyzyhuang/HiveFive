@@ -6,6 +6,7 @@ export default function Header({ title }) {
   return(
     <header className={styles.header}>
       {/* <Image src="/images/bee.png" alt="bee icon" width={1} height={1}/>  */}
+      {/* exit button will be here */}
       <ul className={styles.list}>
         <li className={styles.listItem}>
           <div className={styles.counter}>123</div>
@@ -14,7 +15,7 @@ export default function Header({ title }) {
           <h1 className={styles.pageTitle}>{title}</h1>
         </li>
         <li className={styles.listItem}>
-          <button className={styles.settings}><Link href="/Settings">Settings</Link></button>
+          <button className={styles.settings}><Link href="/Settings"><Image className={styles.settingsImg}/>Settings</Link></button>
         </li>
       </ul>
     </header>

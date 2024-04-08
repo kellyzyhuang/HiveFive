@@ -13,17 +13,20 @@
 
 .popupContent {
   background: white;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  width: 15rem;
   text-align: center;
 }
 
 .correct {
-  color: green;
+  color: var(--correct);
+  font-size: 1.375rem;
 }
 
 .incorrect {
-  color: red;
+  color: var(--incorrect);
+  font-size: 1.375rem;
 }
 
 .nextButton {
@@ -31,6 +34,7 @@
   background-color: rgb(221, 166, 36);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 2rem;
+  width: 50%;
   cursor: pointer;
 }

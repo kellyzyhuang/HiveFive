@@ -57,9 +57,9 @@ export default function Quiz() {
         <div className={styles.buffer}></div>
         <div className={styles.questionHead}>
           <h1 className={styles.question}>{currentQuestion.question}</h1>
-          <img className={styles.speaker}/> 
+          <img className={styles.speaker} src={"/images/speaker_icon.svg"} width={1} height={1}/> 
         </div>
-        <img className={styles.gameBanner}/> 
+        <img className={styles.gameBanner} src={"/images/peekaboo_bee.jpeg"} width={1} height={1}/> 
         <div className={styles.optionContainer}>
           {currentQuestion.options.map((option, index) => (
             <div key={index} className={styles.option} onClick={() => displayAnswer(option)}>
@@ -74,7 +74,7 @@ export default function Quiz() {
             onNextQuestion={nextQuestion}
           />
         )}
-        <img className={styles.microphone}></img> 
+        <img className={styles.microphone} src={"/images/mic_icon.svg"} width={1} height={1}></img> 
       </div>
     </>
   );
