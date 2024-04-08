@@ -6,19 +6,18 @@
   top: 0;
   z-index: 1000;
   display: flex; 
-  justify-content: center; 
-  align-items: center;
 }
 
 .list {
   list-style-type: none; 
   display: flex; 
+  justify-content: space-around;
 }
 
 .pageTitle {
   font-size: 2.25rem;
-  margin-right: 7rem;
   width: 100%;
+  margin-right: 7rem;
   font-family: 'Besley', serif;
 }
 
@@ -27,7 +26,6 @@
   width: 3rem; 
   height: 1rem; 
   padding: 0.2rem;
-  margin-right: 5rem;
   border-radius: 20px; 
   background-color: none; 
   display: flex; 
