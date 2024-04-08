@@ -1,6 +1,6 @@
 .header {
-  background-color: var(--accent-color);
-  height: 8rem;
+  background-color: var(--secondary-color);
+  height:7rem;
   width: 430px;
   position: fixed;
   top: 0;
@@ -16,7 +16,7 @@
 }
 
 .pageTitle {
-  font-size: 2.25rem;
+  font-size: 2rem;
   width: 100%;
   transform: translate(-0.5rem);
   font-family: 'Besley', serif;
@@ -33,12 +33,12 @@
   display: flex; 
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;  
+  margin-top: 2rem;  
 }
 
 .settings {
   transform: translate(2rem); 
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-right: 15rem;
   background-color: inherit;
   border: none;
