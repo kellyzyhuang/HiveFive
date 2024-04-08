@@ -25,6 +25,12 @@ export default function Quiz() {
     }
   };
 
+  const keyTabbing = (option, event) => {
+    if (event.key === "Enter") {
+      displayAnswer(option);
+    }
+  };
+
   const nextQuestion = () => {
     setPopup(false); 
     const nextQuestionIndex = currentQuestionNumber + 1;
@@ -62,7 +68,13 @@ export default function Quiz() {
         <img className={styles.gameBanner} src={"/images/peekaboo_bee.jpeg"} width={1} height={1}/> 
         <div className={styles.optionContainer}>
           {currentQuestion.options.map((option, index) => (
-            <div key={index} className={styles.option} onClick={() => displayAnswer(option)}>
+            <div 
+              key={index} 
+              className={styles.option} 
+              tabIndex={0} 
+              onClick={() => displayAnswer(option)}
+              onKeyDown={(event) => keyTabbing(option, event)}
+            >
               <p>{index + 1}. {option}</p>
             </div>
           ))}
