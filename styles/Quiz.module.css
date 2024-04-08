@@ -67,5 +67,6 @@
     margin: 2rem 0;
     padding: 1rem;
     border-radius: 50%;
+    box-shadow: 0.2rem 0.5rem 0.3rem var(--shadow);
   }
 
