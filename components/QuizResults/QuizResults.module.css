@@ -6,40 +6,51 @@
   height: 100vh;
   text-align: center;
   font-family: 'Lexend', sans-serif;
-  background-color: var(--secondary-color);
   width: 430px;
   margin: -7px auto;
 }
 
-.scoreContainer {
-
-}
-
 .scoreContainer h1{
+  font-size: 1.75rem;
   font-family: 'Besley', serif;
 }
 
 .scoreCircle {
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 50%;
   width: 6.25rem;
   height: 6.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 6.5rem;
+  margin-left: 7.3rem;
 }
 
 .score {
-  font-size: 2rem;
+  font-size: 3.4rem;
 }
 
 .anotherQuizButton, .homeButton {
-  padding: 0.625rem 1.25rem;
-  margin: 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  margin: 1rem;
   border: none;
   border-radius: 1.25rem;
+  height: 3.2rem;
+  width: 20rem;
+  font-size: 1.375rem;
   background-color: var(--accent-color);
   cursor: pointer;
   font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+}
+
+.homeButton{
+  background-color: var(--secondary-color);
+}
+
+.anotherQuizButton{
+  margin-top: 4rem;
 }
