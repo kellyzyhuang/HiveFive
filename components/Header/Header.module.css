@@ -11,13 +11,14 @@
 .list {
   list-style-type: none; 
   display: flex; 
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pageTitle {
   font-size: 2.25rem;
   width: 100%;
-  margin-right: 7rem;
+  transform: translate(-0.5rem);
   font-family: 'Besley', serif;
 }
 
@@ -26,6 +27,7 @@
   width: 3rem; 
   height: 1rem; 
   padding: 0.2rem;
+  margin-right: 4rem;
   border-radius: 20px; 
   background-color: none; 
   display: flex; 
@@ -35,8 +37,9 @@
 }
 
 .settings {
-  transform: translate(-2rem); 
+  transform: translate(2rem); 
   margin-top: 4rem;
+  margin-right: 15rem;
   background-color: inherit;
   border: none;
   font-family: 'Lexend', sans-serif;
