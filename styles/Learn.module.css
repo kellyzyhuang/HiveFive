@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: var(--black-text);
+    min-height: 100vh;
+    margin: -10px;
+  }
+
+  .screen {
+    width: 429px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .buffer{
+    height: 8rem;
+    width: 100%;
+  }
