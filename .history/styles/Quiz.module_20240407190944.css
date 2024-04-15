@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Lexend:wght@100..900&display=swap');
+
+.screen {
+    width: 430px;
+    height: 100%;
+    background-color: var(--secondary-color);
+    margin: -7px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Lexend', sans-serif;
+  }
+
+  .question{
+    font-size: 1.375rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    line-height: 2.1rem;
+    font-family: 'Besley', serif;
+  }
+
+  .buffer{
+    height: 10rem;
+    width: 100%;
+  }
+
+  .speaker {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .gameBanner {
+    width: 100%;
+    background-color: var(--accent-color);
+    height: 16rem;
+    margin: 2rem 0;
+  }
+
+  .questionHead {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .option {
+    width: 46%;
+    height: 7rem;
+    border-radius: 30px;
+    margin: 0.5rem;
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .optionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .microphone {
+    background-color: var(--accent-color);
+    height: 4rem;
+    width: 4rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0.2rem 0.5rem 0.3rem var(--shadow);
+  }
+

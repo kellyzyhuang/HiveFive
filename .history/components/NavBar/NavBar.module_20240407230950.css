@@ -1,0 +1,35 @@
+.navBar{
+    background-color: var(--accent-color);
+    color: var(--black-text);
+    width: 430px;
+    background-color: var(--accent-color);
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.navIcon {
+    width: 2rem;
+}
+
+.navList{
+   display: flex;
+   justify-content: space-around;
+}
+
+.label{
+    color: black;
+}
+
+.activity a, .learnMore a, .quiz a, .home a{
+    text-decoration: none;
+}
+
+.iconLabel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

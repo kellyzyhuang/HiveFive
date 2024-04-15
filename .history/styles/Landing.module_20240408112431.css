@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Lexend:wght@100..900&display=swap');
+
+.Landing{
+    background-color: var(--sky-background);
+    width: 430px;
+    height: 100%;
+    margin: -7px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend', sans-serif;
+    margin: -5px;
+}
+
+.beehiveImg{
+    transform: translate(-4.6rem);
+    margin-top: 2rem;
+    z-index: 1;
+}
+
+.leftCloud{
+    transform: translate(9rem);
+    margin-top: -5rem;
+}
+
+.rightCloud{
+    transform: translate(-8rem);
+    margin-top: -3rem;
+}
+
+.happyBeenard{
+    margin-top: -1rem;
+}
+
+.grassImg{
+    margin-top: 1rem;
+}
+
+.text{
+    text-align: center;
+    line-height: 0.4rem;
+}
+
+.text h1{
+    font-size: 3rem;
+}
+
+.startButton{
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 2rem;
+    width: 80%;
+    height: 4rem;
+    font-size: 1.375rem;
+    margin-top: -8rem;
+    font-family: 'Lexend', sans-serif;
+}
+

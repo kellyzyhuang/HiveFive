@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Lexend:wght@100..900&display=swap');
+
+.screen {
+    width: 430px;
+    height: 100%;
+    background-color: var(--secondary-color);
+    margin: -7px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Lexend', sans-serif;
+  }
+
+  .question{
+    font-size: 1.75rem;
+    text-align: left;
+    width: 90%:
+  }
+
+  .buffer{
+    height: 10rem;
+    width: 100%;
+  }
+
+  .speaker {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .gameBanner {
+    width: 100%;
+    background-color: var(--accent-color);
+    height: 16rem;
+    margin: 2rem 0;
+  }
+
+  .questionHead {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .option {
+    width: 46%;
+    height: 7rem;
+    border-radius: 30px;
+    margin: 0.5rem;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .optionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .microphone {
+    background-color: var(--accent-color);
+    height: 5rem;
+    width: 5rem;
+    margin: 2rem 0;
+    border-radius: 50%;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .popupContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .close {
+    float: right;
+    font-size: 28px;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
+  
+  .nextButton {
+    padding: 10px;
+    background-color: rgb(221, 166, 36);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

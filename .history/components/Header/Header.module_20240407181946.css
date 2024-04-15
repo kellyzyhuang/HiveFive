@@ -1,0 +1,39 @@
+.header {
+  background-color: var(--accent-color);
+  height: 9rem;
+  width: 430px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex; 
+  justify-content: center; 
+}
+
+.list {
+  list-style-type: none; 
+  display: flex; 
+}
+
+.pageTitle {
+  font-size: 2.25rem;
+  padding-top: 3rem; 
+  margin-right: 7rem; 
+  width: 100%;
+  font-family: 'Besley', serif;
+}
+
+.counter {
+  border: 1px solid black; 
+  width: 3rem; 
+  height: 1rem; 
+  border-radius: 20px; 
+  background-color: none; 
+  display: flex; 
+  justify-content: center;
+  margin-top: 5.1rem;  
+  margin-right: 5rem; 
+}
+
+.settings {
+  transform: translate(-2rem); 
+}
