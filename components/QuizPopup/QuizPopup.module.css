@@ -20,21 +20,30 @@
 }
 
 .correct {
-  color: var(--correct);
+  color: var(--white-text);
   font-size: 1.375rem;
 }
 
 .incorrect {
-  color: var(--incorrect);
+  color: var(--white-text);
   font-size: 1.375rem;
 }
 
 .nextButton {
-  padding: 10px;
-  background-color: rgb(221, 166, 36);
   color: white;
-  border: none;
-  border-radius: 2rem;
-  width: 50%;
   cursor: pointer;
+  background-color: transparent; 
+  border: none; 
+}
+
+.correctAnswer {
+  color: var(--white-text); 
+}
+
+.correctBackground {
+  background-color: var(--correct); 
+}
+
+.incorrectBackground {
+  background-color: var(--incorrect);
 }
