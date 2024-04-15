@@ -15,7 +15,7 @@ export default function Header({ title }) {
           <h1 className={styles.pageTitle}>{title}</h1>
         </li>
         <li className={styles.listItem}>
-          <button className={styles.settings}><Link href="/Settings"><Image className={styles.settingsImg}/>Settings</Link></button>
+          <button className={styles.settings}><Link href="/Settings">Settings</Link></button>
         </li>
       </ul>
     </header>
