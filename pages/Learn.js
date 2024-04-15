@@ -35,7 +35,6 @@ export default function Learn() {
                 return(
                     <div key={index}>
                     {i.title}
-                    {i.image}
                     </div>
                 )
                 })
