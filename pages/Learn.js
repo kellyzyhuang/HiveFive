@@ -25,19 +25,18 @@ export default function Learn() {
         <main className={`${styles.main}`}>
             <Header title="Learn"/>
         <div className={styles.screen}>
-            <div className={styles.articles}>
-                {data.map((article, index) => (
-                    <div key={index} className={styles.articleCard}>
-                        <div className={styles.overlay}></div>
-                        <img src='/images/bee-image3.jpg' alt="Article Image" layout='fill' objectFit='cover' />
-                        <div className={styles.date}>
-                        {/* {new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} */}
-                        </div>
-                        <div className={styles.title}>
-                            {article.title}
-                        </div>
+        <div className={styles.articles}>
+            <div className={styles.buffer}></div>
+            {
+                data.map((i, index) => {
+                return(
+                    <div key={index}>
+                    {i.title}
+                    {i.image}
                     </div>
-                ))}
+                )
+                })
+            }
             </div>
         </div>
         <NavBar className={styles.nav}/>
