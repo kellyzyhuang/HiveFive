@@ -10,7 +10,7 @@ export default function NavBar(){
                 <li className={styles.home}>
                     <Link href="/">
                         <div className={styles.iconLabel}>
-                            <Image className={styles.navIcon} src={"/images/home_icon.svg"} width={20} height={20}/>
+                            <Image className={styles.navIcon} src="/images/home_icon.svg" width={20} height={20} alt="home icon"/>
                             <span className={styles.label}>Home</span>
                         </div>
                     </Link>
@@ -18,7 +18,7 @@ export default function NavBar(){
                 <li className={styles.learnMore}>
                     <Link href="/Learn">
                         <div className={styles.iconLabel}>
-                            <Image className={styles.navIcon} src={"/images/learn_more_icon.svg"} width={20} height={20}/>
+                            <Image className={styles.navIcon} src="/images/learn_more_icon.svg" width={20} height={20} alt="learn more icon"/>
                             <span className={styles.label}>Learn</span>
                         </div>
                     </Link>
@@ -26,7 +26,7 @@ export default function NavBar(){
                 <li className={styles.quiz}>
                     <Link href={'/Quiz'}>
                         <div className={styles.iconLabel}>
-                            <Image className={styles.navIcon} src={"/images/quiz_icon.svg"} width={20} height={20}/>
+                            <Image className={styles.navIcon} src="/images/quiz_icon.svg" width={20} height={20} alt="quiz icon"/>
                             <span className={styles.label}>Quiz</span>
                         </div>
                     </Link>
@@ -34,7 +34,7 @@ export default function NavBar(){
                 <li className={styles.activity}>
                     <Link href="/Activity">
                         <div className={styles.iconLabel}>
-                            <Image className={styles.navIcon} src={"/images/activity_icon.svg"} width={20} height={20}/>
+                            <Image className={styles.navIcon} src="/images/activity_icon.svg" width={20} height={20} alt="activity icon"/>
                             <span className={styles.label}>Activity</span>
                         </div>
                     </Link>
