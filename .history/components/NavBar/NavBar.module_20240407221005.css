@@ -1,0 +1,26 @@
+.navBar{
+    background-color: var(--accent-color);
+    width: 430px;
+    background-color: var(--accent-color);
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.navIcon {
+    width: 2rem;
+}
+
+.navList{
+   display: flex;
+   justify-content: center;
+}
+
+.label{
+    color: black;
+}
+
+.label a{
+    text-decoration: none;
+}

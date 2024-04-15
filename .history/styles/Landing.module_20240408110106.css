@@ -1,0 +1,32 @@
+.Landing{
+    background-color: var(--sky-background);
+    width: 430px;
+    height: 100%;
+    margin: -7px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend', sans-serif;
+}
+
+.beehiveImg{
+    transform: translate(-4.6rem);
+    margin-top: 2rem;
+    z-index: 1;
+}
+
+.leftCloud{
+    transform: translate(9rem);
+    margin-top: -5rem;
+}
+
+.rightCloud{
+    transform: translate(-8rem);
+    margin-top: -3rem;
+}
+
+.happyBeenard{
+    margin-top: -1rem;
+}
