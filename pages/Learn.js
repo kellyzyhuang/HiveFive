@@ -31,7 +31,7 @@ export default function Learn() {
                         <div className={styles.overlay}></div>
                         <img src='/images/bee-image3.jpg' alt="Article Image" layout='fill' objectFit='cover' />
                         <div className={styles.date}>
-                            {new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                        {/* {new Date(article.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} */}
                         </div>
                         <div className={styles.title}>
                             {article.title}
