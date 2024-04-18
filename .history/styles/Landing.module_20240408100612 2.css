@@ -1,0 +1,7 @@
+.Landing{
+    background-color: var(--sky-background);
+    width: 480px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}

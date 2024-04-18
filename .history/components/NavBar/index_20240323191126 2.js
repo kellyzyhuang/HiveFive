@@ -1,0 +1,16 @@
+import styles from "./NavBar.module.css";
+import Images from "next/Images";
+
+export default function NavBar(){
+    return(
+        <nav className={styles.navBar}>
+            <a href={"/"}>Quiz</a>
+            <div className={styles.navList}>
+                <a href={"/"}>Activity</a>
+                <a href={"/"}>Learn More</a>
+                <a href={"/"}>Settings</a>
+                <a href={"/"}>Home</a>
+            </div>
+        </nav>
+    )
+}
