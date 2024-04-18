@@ -13,7 +13,8 @@ export default function Activity() {
     </Head>
     <main className={styles.main}>
         <div className={styles.screen}>
-          <Header title="Activity"/>
+        <Header title="Activity" backImage="/images/back.svg" link="/" />
+
           <div className={styles.buffer}></div>
             <div className={styles.categories}>
               {/* <Card/> to be replaced by card component*/}

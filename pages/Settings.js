@@ -15,7 +15,7 @@ export default function Settings() {
     </Head>
     <main className={styles.main}>
         <div className={styles.screen}>
-          <Header title="Settings"/>
+        <Header title="Settings" backImage="/images/back.svg" link="/" />
           <div className={styles.buffer}></div>
             <section className={styles.userProfile}>
               <div className={styles.profileIcon}>

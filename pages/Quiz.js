@@ -59,7 +59,7 @@ export default function Quiz() {
   return (
     <>
       <div className={styles.screen}>
-        <Header title="Quiz"/>
+      <Header title="Quiz" backImage="/images/x.svg" link="/" exit />
         <div className={styles.buffer}></div>
         <div className={styles.questionHead}>
           <h1 className={styles.question}>{currentQuestion.question}</h1>

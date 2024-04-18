@@ -13,7 +13,7 @@ export default function Stats() {
     </Head>
     <main className={styles.main}>
         <div className={styles.screen}>
-          <Header title="User Stats"/>
+        <Header title="User Stats" backImage="/images/back.svg" link="/" />
           <div className={styles.buffer}></div>
             <section className={styles.userStats}> 
               <ul className={styles.list}>

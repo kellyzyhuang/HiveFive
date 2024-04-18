@@ -23,7 +23,7 @@ export default function Learn() {
     return (
       <>
         <main className={`${styles.main}`}>
-          <Header title="Learn"/>
+        <Header title="Learn" backImage="/images/back.svg" link="/" />
           <div className={styles.screen}>
             <div className={styles.articles}>
               <div className={styles.buffer}></div>

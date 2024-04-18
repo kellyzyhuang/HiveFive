@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.screen}>
-          <Header title="Home"/>
+        <Header title="Home" backImage="/images/123.svg"/>
 
           <div className={styles.buffer}></div>
             <img/> 
