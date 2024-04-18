@@ -1,0 +1,43 @@
+.resultScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: 'Lexend', sans-serif;
+  background-color: var(--secomdary);
+}
+
+.scoreContainer {
+
+}
+
+.scoreContainer h1{
+  font-family: 'Besley', serif;
+}
+
+.scoreCircle {
+  border: 0.125rem solid black;
+  border-radius: 50%;
+  width: 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6.5rem;
+}
+
+.score {
+  font-size: 2rem;
+}
+
+.anotherQuizButton, .homeButton {
+  padding: 0.625rem 1.25rem;
+  margin: 0.625rem;
+  border: none;
+  border-radius: 1.25rem;
+  background-color: var(--accent-color);
+  cursor: pointer;
+  font-family: 'Lexend', sans-serif;
+}

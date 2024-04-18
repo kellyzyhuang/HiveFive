@@ -1,8 +1,6 @@
 import styles from "@/styles/Landing.module.css";
 import Images from "next/image";
 import Button from "@/components/buttons";
-import Tutorial from "./tutorial";
-import Link from "next/link";
 
 export default function Landing(){
     return(
@@ -16,7 +14,7 @@ export default function Landing(){
                 <h3>Help save the bees.</h3>
             </div>
             <Images className={styles.grassImg} src={"/images/grass_bottom.svg"} width={430} height={300}/>
-            <button className={styles.startButton}><Link href="/Tutorial">Start Buzzin'</Link></button>
+            <button className={styles.startButton}>Start Buzzin'</button>
         </div>
     )
 }
