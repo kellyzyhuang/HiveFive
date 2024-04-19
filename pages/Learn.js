@@ -13,12 +13,24 @@ export default function Learn() {
 
     useEffect(() => {
       fetch(url)
-        .then((res) => res.json())
-        .then((info) => {
-          setData(info.articles);
-          console.log(info.articles);
+        .then((res) => {
+          if (res.ok) { // Check if response is ok (i.e., status is in the range of 200-299)
+            return res.json();
+          } else {
+            throw new Error('Network response was not ok.');
+          }
         })
-    }, [])
+        .then((info) => {
+          if (Array.isArray(info.articles)) { // Check if articles is indeed an array
+            setData(info.articles);
+          } else {
+            console.error('Articles is not an array:', info.articles);
+          }
+        })
+        .catch((error) => {
+          console.error('There was a problem with the fetch operation:', error);
+        });
+    }, []);
   
     return (
       <>
@@ -28,7 +40,7 @@ export default function Learn() {
             <div className={styles.articles}>
               <div className={styles.buffer}></div>
               {
-                  data.map((i, index) => {
+                  Array.isArray(data) && data.map((i, index) => {
                   return(
                       <div key={index}>
                         {i.title}
