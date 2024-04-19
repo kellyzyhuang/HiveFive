@@ -5,7 +5,7 @@ export default function Tutorial(){
         <>
         <div>
             <h1>HiveFive</h1>
-            <h2>{title}</h2>
+            {/* <h2>{title}</h2> */}
             <div>
                 <p>{description}</p>
             </div>
