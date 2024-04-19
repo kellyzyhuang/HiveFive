@@ -1,4 +1,5 @@
-import { landingPages } from "@/data/data"
+import { landingPages } from "@/data/data"; 
+import { useState, useEffect } from "react";
 
 export default function Tutorial(){
 
