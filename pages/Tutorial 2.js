@@ -6,7 +6,6 @@ export default function Tutorial(){
         <div>
             <h1>HiveFive</h1>
             <div>
-                <p>{description}</p>
             </div>
             <div>
                 <img/>
