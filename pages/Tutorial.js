@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 import { landingPages } from "@/data/data";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Home from ".";
 import styles from "@/styles/Tutorial.module.css";
-=======
-import { landingPages } from "@/data/data"; 
-import { useState, useEffect } from "react";
->>>>>>> main
 
 export default function Tutorial(){
 
