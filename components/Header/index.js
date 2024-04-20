@@ -25,7 +25,8 @@ export default function Header({ title, backImage, link, exit }) {
               border: 'none',
               padding: 0,
               background: 'none'
-            }} onClick={togglePopup}>
+              }} 
+              onClick={togglePopup}>
               {backImage && <Image src={backImage} width={30} height={30} alt="Back icon" />}
             </button>
           ) : (
