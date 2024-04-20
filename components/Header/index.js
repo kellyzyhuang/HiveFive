@@ -20,8 +20,13 @@ export default function Header({ title, backImage, link, exit }) {
       <ul className={styles.list}>
         <li className={styles.listItem}>
           {exit ? (
-            <button onClick={togglePopup}>
-              {backImage && <Image src={backImage} width={40} height={40} alt="Back icon" />}
+            <button 
+              style={{
+              border: 'none',
+              padding: 0,
+              background: 'none'
+            }} onClick={togglePopup}>
+              {backImage && <Image src={backImage} width={30} height={30} alt="Back icon" />}
             </button>
           ) : (
             link && (
@@ -54,13 +59,16 @@ export default function Header({ title, backImage, link, exit }) {
         </div>
       )}
       {isPopupOpen && (
+
+      <div className={`${styles.overlay}`}>
         <div className={styles.popup}>
-          <p>Are you sure you want to leave? your progress will be lost.</p>
-          <button onClick={togglePopup}>Stay</button>
+          <p>Are you sure you want to leave? your progress will be not be saved.</p>
           <Link href="/">
-              <button>Leave</button>
+              <button className={`${styles.popUpButton} ${styles.leave}`}>Leave</button>
           </Link>
+          <button className={styles.popUpButton} onClick={togglePopup}>Stay</button>
         </div>
+      </div>
       )}
     </header>
   )
