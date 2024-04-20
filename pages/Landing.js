@@ -1,7 +1,7 @@
 import styles from "@/styles/Landing.module.css";
 import Images from "next/image";
 import Button from "@/components/buttons";
-import Tutorial from "./tutorial";
+import Tutorial from "./Tutorial";
 import Link from "next/link";
 
 export default function Landing(){
