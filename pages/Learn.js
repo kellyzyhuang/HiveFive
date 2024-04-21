@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Header from "@/components/Header";
 import NavBar from '@/components/NavBar';
 import styles from '@/styles/Learn.module.css';
@@ -39,9 +39,9 @@ export default function Learn() {
                         <div className={styles.buffer}></div>
                         {data.map((article, index) => (
                             <div key={index}>
+                                <img>{article.image}</img>
                                 <h3>{article.title}</h3>
-                                <p>{article.description}</p>
-                                <a href={article.url} target="_blank" rel="noopener noreferrer">Read more</a>
+                                <p>{article.publishedAt}</p>
                             </div>
                         ))}
                     </div>
