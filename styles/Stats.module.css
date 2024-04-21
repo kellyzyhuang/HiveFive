@@ -4,18 +4,19 @@
   background-color: var(--black-text);
   min-height: 100vh;
   margin: -10px;
+  font-family: "Lexend", sans-serif; 
 }
 
 .screen {
   width: 430px;
   height: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--white-text);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.buffer{
+.buffer {
   height: 10rem;
   width: 100%;
 }
@@ -40,7 +41,6 @@
 .graph {
   width: 44%;
   height: 10rem;
-  background-color: var(--accent-color);
   border-radius: 30px;
   margin: 0.5rem;
   display: block; 

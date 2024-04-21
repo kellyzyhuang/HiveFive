@@ -4,12 +4,13 @@
   background-color: var(--black-text);
   min-height: 100vh;
   margin: -10px;
+  font-family: "Lexend", sans-serif; 
 }
 
 .screen {
   width: 430px;
   height: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--white-text); 
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -18,4 +19,35 @@
 .buffer{
   height: 10rem;
   width: 100%;
+}
+
+.label {
+  background-color: var(--secondary-color); 
+  border-radius: 30px; 
+  width: 15rem; 
+  transform: translate(1rem, -4rem); 
+  padding-bottom: 0.5rem; 
+}
+
+.label h3 {
+  font-size: 1.2rem; 
+  font-weight: 400; 
+  margin-bottom: -0.7rem; 
+  transform: translate(1rem, 0.5rem); 
+}
+
+.label p {
+  font-size: 1rem; 
+  font-weight: 300; 
+  transform: translate(1rem, 0.5rem); 
+}
+
+.userStatsImage {
+  border-radius: 30px; 
+  z-index: -1; 
+}
+
+.moneyDonatedImage {
+  border-radius: 30px; 
+  z-index: -1; 
 }

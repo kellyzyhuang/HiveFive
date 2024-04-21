@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "@/components/Header";
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Activity.module.css'; 
+import NavBar from "@/components/NavBar";
 
 export default function Activity() {
   return(
@@ -14,14 +15,26 @@ export default function Activity() {
     <main className={styles.main}>
         <div className={styles.screen}>
         <Header title="Activity" backImage="/images/back.svg" link="/" />
-
           <div className={styles.buffer}></div>
             <div className={styles.categories}>
-              {/* <Card/> to be replaced by card component*/}
-              {/* <Card/> to be replaced by card component*/}
+              <div className={styles.userStats}>
+                <a href="/Stats"><img src="/images/user_stats.jpg" alt="bar graph" className={styles.userStatsImage}/></a>
+                <div className={styles.label}>
+                  <h3>User Stats</h3>
+                  <p>Track your usage rates!</p>
+                </div>
+              </div>
+              <div className={styles.moneyDonated}>
+                <img src="/images/money_donated.jpg" alt="money jar" className={styles.moneyDonatedImage}/>
+                  <div className={styles.label}>
+                    <h3>Money Donated</h3>
+                    <p>Track your earnings!</p>
+                  </div>
+              </div>
             </div>
             <nav className={styles.nav}>{/*to be replaced by real nav bar*/}</nav>    
         </div>  
+        <NavBar/>
       </main>
     </>
   )

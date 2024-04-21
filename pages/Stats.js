@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Header from "@/components/Header";
-import styles from '@/styles/Stats.module.css'
+import styles from '@/styles/Stats.module.css'; 
+import NavBar from "@/components/NavBar";
+import AreaChart from "@/components/AreaChart";
 
 export default function Stats() {
   return(
@@ -34,11 +36,15 @@ export default function Stats() {
             <div className={styles.timeMenu}></div>
             <section className={styles.graphs}>
               <h3>Time Usage</h3>
-              <div className={styles.graph}></div>
+              <div className={styles.graph}>
+                <AreaChart/>
+              </div>
               <h3>Accuracy Over Time</h3>
-              <div classNAme={styles.graph}></div>
+              <div className={styles.graph}>
+                
+              </div>
             </section>
-            <nav className={styles.nav}>{/*to be replaced by real nav bar*/}</nav>    
+            <NavBar/>  
         </div>  
     </main>
     </>
