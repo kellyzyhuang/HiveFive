@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import styles from '@/styles/Tutorial.module.css';
 
 export default function Tutorial(){
 
