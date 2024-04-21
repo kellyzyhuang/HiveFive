@@ -1,7 +1,4 @@
- arabella-a/tutorials
 
-
- main
 
 export default function Tutorial(){
 
