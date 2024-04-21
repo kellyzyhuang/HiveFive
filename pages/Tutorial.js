@@ -1,8 +1,7 @@
-import { landingPages } from "@/data/data";
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import Home from ".";
-import styles from "@/styles/Tutorial.module.css";
+ arabella-a/tutorials
+
+
+ main
 
 export default function Tutorial(){
 
