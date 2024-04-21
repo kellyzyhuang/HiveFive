@@ -84,9 +84,44 @@
   margin: 0rem 2rem -0.5rem 3rem;
 }
 
-.popup {
-  position: absolute;
-  width: 381px;
-  height: 218px;
+.exitButton {
+  border: none;
+  background-color: none;
+  outline: none;
 }
 
+.popup {
+  position: absolute;
+  top: 20rem;
+  left: 1.5rem;
+  width: 381px;
+  height: 218px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: var(--white-text);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.popUpButton {
+  height: 30px;
+  width: 107px;
+  border: none;
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  margin: 0rem 1rem;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.leave {
+  background-color: var(--secondary-color);
+}
+
+.popup p{
+  text-align: center;
+  padding: 0rem 5rem;
+  height: 30px;
+  margin-top: 3rem;
+}

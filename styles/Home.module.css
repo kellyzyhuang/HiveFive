@@ -9,7 +9,6 @@
 .screen {
   width: 430px;
   height: 100%;
-  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -20,35 +19,128 @@
   width: 100%;
 }
 
-.activityGraph {
+.screen h2 {
   width: 100%;
-  border-radius: 30px;
-  height: 10rem;
-  background-color: var(--accent-color);
+  text-align: center;
+}
+
+.start {
+  width: 399px;
+  height: 310px;
   margin: 0.5rem 1rem;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 10rem;
-}
-
-.item {
-  width: 44%;
-  height: 10rem;
-  background-color: var(--accent-color);
   border-radius: 30px;
-  margin: 0.5rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
-.nav {
+.beenardStart {
+  width: 100%;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.startButton {
+  border: none;
   background-color: var(--accent-color);
-  height: 9rem;
-  width: 430px;
-  position: fixed;
-  bottom: 0;
-  z-index: 1000;
+  height: 38px;
+  width: 191px;
+  margin: 0.25rem 5rem;
+  border-radius: 30px;
+}
+
+.startLink {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.startButtonLearn {
+  background-color: var(--white-text);
+  border: none;
+  height: 38px;
+  width: 191px;
+  margin: 0.25rem 5rem; 
+  border-radius: 30px;
+}
+
+.latestNews {
+  width: 100%;
+  border-radius: 30px;
+  height: 10rem;
+  background-color: var(--secondary-color);
+  margin: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.arrow {
+  transform: scaleX(-1);
+  margin-top: 0.5rem;
+}
+
+.latestNewsButton {
+  border: none;
+  background-color: var(--accent-color);
+  height: 38px;
+  width: 191px;
+  margin: 0.25rem 5rem;
+  border-radius: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.latestNewsLink {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+
+.adventure {
+  width: 399px;
+  height: 310px;
+  margin: 0.5rem 1rem;
+  border-radius: 30px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.adventureText {
+  width: 35%;
+  padding: 1rem;
+}
+
+.adventureTitle {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.beenardAdventure {
+  width: 35%;
+  margin-top: 3rem;
+}
+
+.adventureButton {
+  border: none;
+  background-color: var(--accent-color);
+  height: 70px;
+  width:  225px;
+  margin: 0 5rem 2rem;
+  border-radius: 30px;
+}
+
+.adventureLink {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
 }
