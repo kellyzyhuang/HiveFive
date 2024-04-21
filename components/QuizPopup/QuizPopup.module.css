@@ -13,20 +13,25 @@
 
 .popupContent {
   background: white;
-  padding: 1.25rem;
+  padding-top: 4rem; 
+  padding-bottom: 4rem; 
+  padding-left: 7rem;
+  padding-right: 7rem; 
   border-radius: 1.25rem;
-  width: 15rem;
+  display: flex; 
   text-align: center;
 }
 
 .correct {
   color: var(--white-text);
   font-size: 1.375rem;
+  transform: translate(2rem); 
 }
 
 .incorrect {
   color: var(--white-text);
   font-size: 1.375rem;
+  transform: translate(2rem); 
 }
 
 .nextButton {
@@ -38,6 +43,9 @@
 
 .correctAnswer {
   color: var(--white-text); 
+  position: absolute; 
+  transform: translate(0, 3rem); 
+  width: 250px; 
 }
 
 .correctBackground {
@@ -46,4 +54,36 @@
 
 .incorrectBackground {
   background-color: var(--incorrect);
+}
+
+.icon {
+  position: absolute; 
+  transform: translate(-3rem); 
+}
+
+.nextButton {
+  position: absolute; 
+  transform: translate(7rem, 6rem); 
+  font-family: "Lexend", sans-serif; 
+  font-size: 1.2rem; 
+}
+
+.arrow {
+  position: absolute; 
+  transform: translate(10.6rem, 6rem); 
+}
+
+.correctAnswerPopup {
+  position: absolute; 
+  transform: translate(0, 10rem); 
+  background-color: white; 
+  padding: 1rem; 
+  border-radius: 30px; 
+}
+
+.beenard {
+  position: absolute; 
+  width: 70%; 
+  height: auto; 
+  transform: translate(9rem, 3rem) rotate(10deg); 
 }

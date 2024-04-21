@@ -59,13 +59,18 @@ export default function Quiz() {
   return (
     <>
       <div className={styles.screen}>
-      <Header title="Quiz" backImage="/images/x.svg" link="/" exit />
+        <Header title="Quiz" backImage="/images/x.svg" link="/" exit className={styles.exitIcon}/>
         <div className={styles.buffer}></div>
+        <div className={styles.progressBar}>
+          <img className={styles.progress} src={currentQuestion.progress}/>
+        </div>
         <div className={styles.questionHead}>
           <h1 className={styles.question}>{currentQuestion.question}</h1>
           <img className={styles.speaker} src={"/images/speaker_icon.svg"} width={1} height={1}/> 
         </div>
-        <img className={styles.gameBanner} src={"/images/peekaboo_bee.jpeg"} width={1} height={1}/> 
+        <div className={styles.imageContainer}>
+          <img className={styles.gameBanner} src={currentQuestion.image}/> 
+        </div>
         <div className={styles.optionContainer}>
           {currentQuestion.options.map((option, index) => (
             <div 

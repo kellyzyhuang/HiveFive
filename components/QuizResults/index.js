@@ -7,6 +7,9 @@ export default function QuizResults({ correctAnswersTotal, questionCount, onRest
   return (
     <div className={styles.resultScreen}>
       <Header title="Results" />
+      <div className={styles.progress}>
+        <img src="/images/progress6.svg"/>
+      </div>
       <div className={styles.scoreContainer}>
         <h1>Complete!</h1>
         <div className={styles.scoreCircle}>

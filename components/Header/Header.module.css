@@ -21,7 +21,8 @@
 .pageTitle {
   font-size: 2rem;
   width: 100%;
-  font-family: 'Besley', serif;
+  font-family: "Lexend", sans-serif; 
+  transform: translate(1rem, 1.5rem); 
 }
 
 .counter {
@@ -72,12 +73,17 @@
   margin: 1rem;
 }
 
+.exitIcon {
+  transform: translate(0, 1.5rem); 
+}
+
 .navIcon {
   border: none;
   padding: 0;
   margin: 0;
   background: none;
   outline: none;
+  transform: translate(0.5rem, 1.5rem); 
 }
 
 .hamIcon {
