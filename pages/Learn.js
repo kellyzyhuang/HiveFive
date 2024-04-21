@@ -30,20 +30,39 @@ export default function Learn() {
         fetchData();
     }, []);
 
+    const formatDate = (dateString) => {
+        const date = new Date(dateString);
+        return `${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`;
+    };
+
     return (
         <>
             <main className={`${styles.main}`}>
                 <Header title="Learn" backImage="/images/back.svg" link="/" />
                 <div className={styles.screen}>
+                    <div className={styles.search}>
+                        <img src="/images/search_icon.svg" alt="search icon" className={styles.searchIcon}/>
+                        <p className={styles.searchPlaceholder}>Search</p>
+                        <div className={styles.line}></div>
+                    </div>
+                    <div className={styles.chips}>
+                        <p className={styles.sort}>Sort By: </p>
+                        <button className={styles.chip}>Bees</button>
+                        <button className={styles.chip}>Plants</button>
+                        <button className={styles.chip}>Projects</button>
+                    </div>
                     <div className={styles.articles}>
                         <div className={styles.buffer}></div>
+                        <div className={styles.articleContainer}>
                         {data.map((article, index) => (
-                            <div key={index}>
-                                <img>{article.image}</img>
-                                <h3>{article.title}</h3>
-                                <p>{article.publishedAt}</p>
+                            <div key={index} className={styles.article}>
+                                <div className={styles.overlay}></div>
+                                <img src="/images/bee-image.jpg" className={styles.coverPhoto} alt="Cover"></img>
+                                <div className={styles.date}>{formatDate(article.publishedAt)}</div>
+                                <div className={styles.title}><p>{article.title}</p></div>
                             </div>
                         ))}
+                        </div>
                     </div>
                 </div>
                 <NavBar className={styles.nav}/>
