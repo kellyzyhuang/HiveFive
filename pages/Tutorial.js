@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from '@/styles/Tutorial.module.css';
+import Link from "next/link";
 
 export default function Tutorial(){
 
