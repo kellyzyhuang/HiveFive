@@ -22,7 +22,8 @@
           <div className={styles.screen}>
           <Header title="Home" backImage="/images/123.svg"/>
             <div className={styles.buffer}></div>
-            <h2>Welcome to HiveFive!</h2>
+            <h2 className={styles.heading}>Welcome to HiveFive!</h2>
+            <div className={styles.line}></div>
             <button>
               <Link href="/Landing">tutorial</Link>
             </button>
@@ -36,16 +37,18 @@
               </button>
             </div>
               <div className={styles.latestNews}>
-              <button className={styles.latestNewsButton}>
-                <Link className={styles.latestNewsLink} href="/Learn">Latest News</Link>
-                <Image src="/images/back.svg" width={20} height={20} alt="arrow" className={styles.arrow}/>
-              </button>
+                <button className={styles.latestNewsButton}>
+                  <Link className={styles.latestNewsLink} href="/Learn">Latest News</Link>
+                  <Image src="/images/back.svg" width={20} height={20} alt="arrow" className={styles.arrow}/>
+                </button>
+                <img src="/images/latestnews.png" alt="house background" className={styles.latestNewsImage}/>
               </div>
               <div className={styles.latestNews}>
-              <button className={styles.latestNewsButton}>
-                <Link className={styles.latestNewsLink} href="/Learn">Latest News</Link>
-                <Image src="/images/back.svg" width={20} height={20} alt="arrow" className={styles.arrow}/>
-              </button>
+                <button className={styles.latestProjectsButton}>
+                  <Link className={styles.latestNewsLink} href="/Learn">Latest Projects</Link>
+                  <Image src="/images/back.svg" width={20} height={20} alt="arrow" className={styles.arrow}/>
+                </button>
+                <img src="/images/latestprojects.png" alt="bee workers" className={styles.latestProjectsImage}/>
               </div>
               <div className={styles.adventure}>
                 <div className={styles.adventureText}>

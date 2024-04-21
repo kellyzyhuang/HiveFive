@@ -3,6 +3,7 @@ import styles from '@/styles/Settings.module.css'
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import NavBar from "@/components/NavBar";
 
 export default function Settings() {
   return(
@@ -19,10 +20,10 @@ export default function Settings() {
           <div className={styles.buffer}></div>
             <section className={styles.userProfile}>
               <div className={styles.profileIcon}>
-                <img/> {/*to be replaced by profile icon */}
+                <img src="/images/profilepicture.jpg" alt="profile picture"/>
               </div>
               <div className={styles.profileDetails}>
-                <h3>User Name</h3>
+                <h3>Jane</h3>
                 <p>Edit profile</p>
               </div>
             </section>
@@ -30,50 +31,63 @@ export default function Settings() {
               <h3>General</h3>
               <ul className={styles.list}>
                 <li className={styles.listItem}>
-                  {/* <img/> to be replaced by icon */}
-                  <h5>Keyboard Tabbing</h5>
-                  <p>Use your keyboard to navigate the app</p>
+                  <img src="/images/keyboard_tabbing.svg" alt="keyboard tabbing icon" className={styles.icon}/>
+                  <div>
+                    <h5>Keyboard Tabbing</h5>
+                    <p>Use your keyboard to navigate the app</p>
+                  </div>
                   {/* <img/> to be replaced by toggle button */}
                 </li>
                 <li className={styles.listItem}>
-                  {/* <img/> to be replaced by icon */}
-                  <h5>Sound</h5>
-                  <p>Adjust notifications and general audio</p>
+                <img src="/images/sound.svg" alt="sound icon" className={styles.icon}/>
+                  <div>
+                    <h5>Sound</h5>
+                    <p>Adjust notifications and general audio</p>
+                  </div>
                   {/* <img/> to be replaced by toggle button */}
                 </li>
                 <li className={styles.listItem}>
-                  {/* <img/> to be replaced by icon */}
-                  <h5>Dark Mode</h5>
-                  <p>Switch to dark mode</p>
+                <img src="/images/dark_mode.svg" alt="dark mode icon" className={styles.icon}/>
+                  <div>
+                    <h5>Dark Mode</h5>
+                    <p>Switch to dark mode</p>
+                  </div>
                   {/* <img/> to be replaced by toggle button */}
                 </li>
                 <li className={styles.listItem}>
-                  {/* <img/> to be replaced by icon */}
-                  <h5>Text Size</h5>
-                  <p>Switch to a different sized font</p>
+                <img src="/images/font_size.svg" alt="font size icon" className={styles.icon}/>
+                  <div>
+                    <h5>Text Size</h5>
+                    <p>Switch to a different sized font</p>
+                  </div>
                   <form>
                     <select></select>
                   </form>
                 </li>
                 <li className={styles.listItem}>
-                  {/* <img/> to be replaced by icon */}
-                  <h5>Font</h5>
-                  <p>Switch to a different typeface</p>
+                <img src="/images/type_face.svg" alt="type face icon" className={styles.icon}/>
+                  <div>
+                    <h5>Font</h5>
+                    <p>Switch to a different typeface</p>
+                  </div>
                   <form>
                     <select></select>
                   </form>
                 </li>
                 <li className={styles.listItem}>
-                  {/* <img/> to be replaced by icon */}
-                  <h5>Language</h5>
-                  <p>Switch to a different language</p>
+                <img src="/images/language.svg" alt="globe icon" className={styles.icon}/>
+                  <div>
+                    <h5>Language</h5>
+                    <p>Switch to a different language</p>
+                  </div>
                   <form>
                     <select></select>
                   </form>
                 </li>
               </ul>
             </section>
-            <nav className={styles.nav}>{/*to be replaced by real nav bar*/}</nav>    
+            <div className={styles.buffer}></div>
+            <NavBar/>
         </div>  
       </main>
     </>
