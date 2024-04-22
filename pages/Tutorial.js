@@ -34,7 +34,7 @@ export default function Tutorial(){
                 </div>
                 <img className={styles.happyBee} src="/images/happy_bee.svg" alt="happy bee mascot" width={250} height={200}/>
                 <div className={styles.continue}>
-                    <button className={styles.continueButton} onClick={nextPage}>Continue<img src="/images/next_icon.svg" alt="next icon" width={50} height={50}/></button>
+                    <button className={styles.continueButton} onClick={nextPage}>Continue<img src="/images/next_icon.svg" alt="next icon" width={23} height={23}/></button>
                 </div>
             </div>
         </main>
