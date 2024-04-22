@@ -54,3 +54,8 @@
 .anotherQuizButton{
   margin-top: 4rem;
 }
+
+.homeLink {
+  text-decoration: none; 
+  color: black; 
+}

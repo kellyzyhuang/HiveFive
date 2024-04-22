@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import styles from '@/styles/Stats.module.css'; 
 import NavBar from "@/components/NavBar";
 import AreaChart from "@/components/AreaChart";
+import GradientChart from "@/components/GradientChart";
 
 export default function Stats() {
   return(
@@ -41,7 +42,7 @@ export default function Stats() {
               </div>
               <h3>Accuracy Over Time</h3>
               <div className={styles.graph}>
-                
+                <GradientChart/>
               </div>
             </section>
             <NavBar/>  

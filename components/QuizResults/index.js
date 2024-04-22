@@ -18,7 +18,7 @@ export default function QuizResults({ correctAnswersTotal, questionCount, onRest
         <p>{correctAnswersTotal} out of {questionCount} questions correct</p>
         <p>You earned {correctAnswersTotal * 5} points!</p>
         <button className={styles.anotherQuizButton} onClick={onRestart}>Take Another Quiz</button>
-        <button className={styles.homeButton} onClick={onRestart}>Return Home</button>
+        <button className={styles.homeButton}><a className={styles.homeLink} href="/">Return Home</a></button>
       </div>
       <NavBar/>
     </div>
