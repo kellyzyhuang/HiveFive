@@ -70,6 +70,7 @@
 }
 
 .continueButton{
+    display: flex;
     float: right;
     background-color: var(--accent-color);
     border: none;
@@ -80,4 +81,10 @@
     font-weight: 500;
     font-family: var(--font-family);
     margin-top: 10rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.continue img{
+    margin: 0.2rem;
 }
