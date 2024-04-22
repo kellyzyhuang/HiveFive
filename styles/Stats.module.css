@@ -31,7 +31,15 @@
 .list {
   display: flex; 
   list-style-type: none; 
-  gap: 30px; 
+  gap: 4rem; 
+  margin-right: 2.8rem; 
+}
+
+.listItem h6 {
+  font-weight: 300; 
+  font-size: 0.9rem; 
+  width: 100px; 
+  margin-top: -0.5rem; 
 }
 
 .graphs {
@@ -55,3 +63,32 @@
   z-index: 1000;
 }
 
+.filterList {
+  display: flex; 
+  gap: 4rem; 
+  list-style-type: none; 
+  background-color: var(--secondary-color); 
+  border-radius: 30px; 
+  padding-right: 2rem;
+  height: 3rem;  
+  width: 22rem; 
+  margin-bottom: 2rem; 
+}
+
+.filterListItem h6 {
+  font-weight: 300; 
+  font-size: 0.9rem; 
+  transform: translate(3rem, -1.2rem); 
+}
+
+.filterListItem1 h6 {
+  font-weight: 300; 
+  font-size: 0.9rem; 
+  transform: translate(-1.9rem, -1.8rem); 
+  background-color: var(--accent-color); 
+  border-radius: 30px; 
+  padding: 0.6rem; 
+  padding-left: 2rem; 
+  padding-right: 2rem; 
+  position: absolute; 
+}

@@ -1,0 +1,60 @@
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black-text);
+  min-height: 100vh;
+  margin: -10px;
+  font-family: "Lexend", sans-serif; 
+}
+
+.screen {
+  width: 430px;
+  height: 100%;
+  background-color: var(--white-text);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.headingContent {
+  margin-top: 10rem; 
+}
+
+.headingContent h1 {
+  font-size: 3.5rem; 
+  font-weight: 400; 
+}
+
+.headingContent h4 {
+  font-size: 1.1rem; 
+  font-weight: 300; 
+  display: flex; 
+  justify-content: center; 
+  margin-top: -3rem; 
+}
+
+.aboutHeading h4 {
+  font-size: 1.2rem; 
+  font-weight: 500; 
+}
+
+.aboutHeading {
+  padding-left: 1.5rem; 
+  padding-right: 1.5rem; 
+}
+
+.aboutHeading p {
+  font-weight: 300; 
+}
+
+.line {
+  border: 3px solid var(--accent-color); 
+  border-radius: 30px; 
+  position: absolute; 
+  width: 21%; 
+  transform: translate(4.5rem, -2.5rem); 
+}
+
+.sponsors {
+  margin-bottom: 7rem; 
+}

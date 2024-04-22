@@ -25,7 +25,7 @@ export default function Stats() {
                   <h6>Current Streak</h6>
                 </li>
                 <li className={styles.listItem}>
-                  <h3>95%</h3>
+                  <h3>95.4%</h3>
                   <h6>Accuracy</h6>
                 </li>
                 <li className={styles.listItem}>
@@ -34,6 +34,22 @@ export default function Stats() {
                 </li>
               </ul>
             </section>
+            <div className={styles.filter}>
+              <ul className={styles.filterList}>
+                <li className={styles.filterListItem1}>
+                  <h6>Today</h6>
+                </li>
+                <li className={styles.filterListItem}>
+                  <h6>Week</h6>
+                </li>
+                <li className={styles.filterListItem}>
+                  <h6>Month</h6>
+                </li>
+                <li className={styles.filterListItem}>
+                  <h6>Year</h6>
+                </li>
+              </ul>
+            </div>
             <div className={styles.timeMenu}></div>
             <section className={styles.graphs}>
               <h3>Time Usage</h3>
