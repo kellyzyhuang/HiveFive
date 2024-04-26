@@ -8,6 +8,7 @@
   flex-wrap: wrap;
   justify-content: center;
   font-family: 'Lexend', sans-serif;
+  background-color: var(--cream);
 }
 
 .question{

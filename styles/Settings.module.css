@@ -9,7 +9,7 @@
 .screen {
   width: 430px;
   height: 100%;
-  background-color: var(--white-text);
+  background-color: var(--cream);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
