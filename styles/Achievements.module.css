@@ -1,0 +1,85 @@
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: var(--black-text);
+    margin: -10px;
+    font-family: "Lexend", sans-serif; 
+  }
+
+.screen {
+    width: 430px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--cream);
+  }
+
+  .buffer{
+    height: 8rem;
+    width: 100%;
+  }
+
+  .buttons {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .rewards {
+    width: 191px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 550;
+  }
+
+  .achievements {
+    width: 191px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 550;
+  }
+
+  .rewardsContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .rewardsItem {
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    width: 191px;
+    height: 220px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .itemName {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+  }
+
+  .applyButton {
+    width: 115px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: var(--accent-color);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  
