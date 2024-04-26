@@ -8,7 +8,7 @@ export default function NavBar(){
             <div className={styles.navMenu}>{/* will add */}
             <ul className={styles.navList}>
                 <li className={styles.home}>
-                    <Link href="/">
+                    <Link href="/Home">
                         <div className={styles.iconLabel}>
                             <Image className={styles.navIcon} src="/images/home_icon.svg" width={20} height={20} alt="home icon"/>
                             <span className={styles.label}>Home</span>

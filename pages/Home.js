@@ -3,7 +3,6 @@
   import styles from '@/styles/Home.module.css'
   import Header from '@/components/Header'; 
   import NavBar from '@/components/NavBar';
-  import Landing from './Landing';
   import Link from 'next/link';
 
   export default function Home() {
@@ -24,9 +23,6 @@
             <div className={styles.buffer}></div>
             <h2 className={styles.heading}>Welcome to HiveFive!</h2>
             <div className={styles.line}></div>
-            <button>
-              <Link href="/Landing">tutorial</Link>
-            </button>
             <div className={styles.start}>
               <Image src="/images/happy_bee.svg" width={150} height={150} alt="beenard" className={styles.beenardStart}/>
               <button className={styles.startButtonLearn}>

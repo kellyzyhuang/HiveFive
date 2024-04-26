@@ -29,7 +29,7 @@ export default function Tutorial(){
         <main className={`${styles.main}`}>
             <div className={styles.Landing}>
                 <div className={styles.skip}>
-                <Link href="/"> <button className={styles.skipButton}>Skip</button></Link>{/* will have to change the index page to tutorial */}
+                <Link href="/Home"> <button className={styles.skipButton}>Skip</button></Link>{/* will have to change the index page to tutorial */}
                 </div>
                 <div className={styles.heading}>
                     <h1>HiveFive</h1>
