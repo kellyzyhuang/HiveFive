@@ -19,7 +19,7 @@
         </Head>
         <main className={styles.main}>
           <div className={styles.screen}>
-          <Header title="Home" backImage="/images/123.svg"/>
+            <Header title="Home" backImage="/images/123.svg"/>
             <div className={styles.buffer}></div>
             <h2 className={styles.heading}>Welcome to HiveFive!</h2>
             <div className={styles.line}></div>
