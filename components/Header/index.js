@@ -54,7 +54,7 @@ export default function Header({ title, backImage, link, exit }) {
             <Link href="/menu-item-1" className={styles.menuItem}><Image className={styles.hamIcon} src="/images/profile.svg" width={30} height={30} alt="profile icon"/>Profile</Link>
             <Link href="/Settings" className={styles.menuItem}><Image className={styles.hamIcon} src="/images/Settings.svg" width={30} height={30} alt="settings icon"/>Settings</Link>
             <Link href="/menu-item-3" className={styles.menuItem}><Image className={styles.hamIcon} src="/images/bee-icon.svg" width={30} height={30} alt="bee icon"/>Mini Adventure</Link>
-            <Link href="/menu-item-3" className={styles.menuItem}><Image className={styles.hamIcon} src="/images/trophey.svg" width={30} height={30} alt="achievements icon"/>Achievements</Link>
+            <Link href="/Achievements" className={styles.menuItem}><Image className={styles.hamIcon} src="/images/trophey.svg" width={30} height={30} alt="achievements icon"/>Achievements</Link>
             <Link href="/About" className={styles.menuItem}><Image className={styles.hamIcon} src="/images/about.svg" width={30} height={30} alt="about icon"/>About</Link>
           </div>
         </div>
