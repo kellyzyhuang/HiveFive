@@ -1,5 +1,5 @@
 .navBar{
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     color: var(--black-text);
     width: 430px;
     position: fixed;

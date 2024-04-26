@@ -31,7 +31,7 @@ export default function Header({ title, backImage, link, exit }) {
             </button>
           ) : (
             link && (
-              <Link href={link}>
+              <Link href="/Home">
                   {backImage && <Image src={backImage} width={20} height={20} alt="Back icon" className={styles.backIcon}/>}
               </Link>
             )
@@ -64,7 +64,7 @@ export default function Header({ title, backImage, link, exit }) {
       <div className={`${styles.overlay}`}>
         <div className={styles.popup}>
           <p>Are you sure you want to leave? your progress will be not be saved.</p>
-          <Link href="/">
+          <Link href="/Home">
               <button className={`${styles.popUpButton} ${styles.leave}`}>Leave</button>
           </Link>
           <button className={styles.popUpButton} onClick={togglePopup}>Stay</button>
