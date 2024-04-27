@@ -23,10 +23,24 @@
           <div className={styles.screen}>
             <Header title="Home" backImage="/images/123.svg"/>
             <div className={styles.buffer}></div>
-            <h2 className={styles.heading}>Welcome to HiveFive!</h2>
-            <p> { correctAnswersTotal } </p>
-            <div className={styles.line}></div>
-            <div className={styles.start}>
+            <Image className={styles.beekeper} src="/images/home.svg" alt="beekeper vector" width={348} height={361}/>
+            <div className={styles.welcomeBack}>
+              <p>Are you ready to save the bees?</p>
+              <h2 className={styles.heading}>Welcome back, <span>Anika!</span></h2>
+            </div>
+            <div className={styles.donation}>
+              <h3>Total Donations: </h3>
+              <p> { correctAnswersTotal } </p>
+            </div>
+            {/*<div className={styles.line}></div>*/}
+            <div className={styles.quizSection}>
+              <div>
+                <Image src="/images/Trivia.svg" alt="wondering boy with a question mark" width={127} height={140}/>
+                <h4>Maximize Your <span>Points</span> Potential Today!</h4>
+              </div>
+              <button><Link href="/Quiz">Start Quiz</Link></button>
+            </div>
+            {/*<div className={styles.start}>
               <Image src="/images/happy_bee.svg" width={150} height={150} alt="beenard" className={styles.beenardStart}/>
               <button className={styles.startButtonLearn}>
                 <Link className={styles.startLink} href="/Learn">Start Learning</Link>
@@ -34,20 +48,26 @@
               <button className={styles.startButton}>
                 <Link className={styles.startLink} href="/Quiz">Start Quiz</Link>
               </button>
-            </div>
+            </div>*/}
               <div className={styles.latestNews}>
+                <div>
+                  <Image src="/images/article2.svg" alt="camping tent in the forest" width={176} height={115}/>
+                  <h4>Keeping You in the Loop.</h4>
+                </div>
                 <button className={styles.latestNewsButton}>
                   <Link className={styles.latestNewsLink} href="/Learn">Latest News</Link>
                   <Image src="/images/back.svg" width={20} height={20} alt="arrow" className={styles.arrow}/>
                 </button>
-                <img src="/images/latestnews.png" alt="house background" className={styles.latestNewsImage}/>
               </div>
-              <div className={styles.latestNews}>
-                <button className={styles.latestProjectsButton}>
-                  <Link className={styles.latestNewsLink} href="/Learn">Latest Projects</Link>
+              <div className={styles.matching}>
+                <div>
+                  <Image src="/images/plants2.svg" alt="plants in a watering can" width={108} height={129}/>
+                  <h4>Find the Perfect Match!</h4>
+                </div>
+                <button className={styles.matchingButton}>
+                  <Link href="/Matching">Try Matching</Link>
                   <Image src="/images/back.svg" width={20} height={20} alt="arrow" className={styles.arrow}/>
                 </button>
-                <img src="/images/latestprojects.png" alt="bee workers" className={styles.latestProjectsImage}/>
               </div>
               <div className={styles.adventure}>
                 <div className={styles.adventureText}>
