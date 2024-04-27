@@ -4,8 +4,10 @@
   import Header from '@/components/Header'; 
   import NavBar from '@/components/NavBar';
   import Link from 'next/link';
+  import { useCorrectAnswers } from '../CorrectAnswersContext';
 
   export default function Home() {
+    const { correctAnswersTotal } = useCorrectAnswers();
     return (
       <>
         <Head>
@@ -22,6 +24,7 @@
             <Header title="Home" backImage="/images/123.svg"/>
             <div className={styles.buffer}></div>
             <h2 className={styles.heading}>Welcome to HiveFive!</h2>
+            <p> { correctAnswersTotal } </p>
             <div className={styles.line}></div>
             <div className={styles.start}>
               <Image src="/images/happy_bee.svg" width={150} height={150} alt="beenard" className={styles.beenardStart}/>
