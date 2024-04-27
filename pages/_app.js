@@ -1,5 +1,11 @@
-import '@/styles/globals.css'
+import { CorrectAnswersProvider } from '../CorrectAnswersContext.js';
+import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <CorrectAnswersProvider>
+      <Component {...pageProps} />
+    </CorrectAnswersProvider>
+  );
 }
+
