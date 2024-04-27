@@ -4,6 +4,7 @@ import Header from "@/components/Header/index.js";
 import styles from "@/styles/Quiz.module.css";
 import QuizResults from "@/components/QuizResults";
 import QuizPopup from "@/components/QuizPopup"; 
+import { useCorrectAnswers } from '../CorrectAnswersContext.js';
 
 export default function Quiz() {
   const [currentQuestionNumber, setCurrentQuestionNumber] = useState(0);
@@ -13,6 +14,7 @@ export default function Quiz() {
   const [correctAnswersTotal, setCorrectAnswersTotal] = useState(0);
   const [quizComplete, setQuizComplete] = useState(false);
   const currentQuestion = quiz.questions[currentQuestionNumber];
+  const { updateCorrectAnswersTotal } = useCorrectAnswers();
 
   const displayAnswer = (option) => {
     const isCorrect = option == currentQuestion.answer;
@@ -39,6 +41,7 @@ export default function Quiz() {
       setCurrentQuestionNumber(nextQuestionIndex);
     } else {
       setQuizComplete(true); 
+      updateCorrectAnswersTotal(correctAnswersTotal); // Update the context with the total correct answers
     }
   };
 
