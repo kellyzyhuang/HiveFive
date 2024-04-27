@@ -27,13 +27,99 @@
   width: 100%;
   text-align: center;
   font-family: "Lexend", sans-serif; 
-  font-weight: 500; 
+  font-weight: 500;
+  font-size: 2.625rem; 
+  text-align: left;
+  line-height: 3rem;
+}
+
+.beekeper{
+  margin-bottom: 2rem;
+}
+
+.welcomeBack{
+  line-height: 0.1rem;
+  margin-left: 1rem;
+}
+
+.welcomeBack span{
+  font-weight: bold;
+}
+
+.donation{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 24.875rem;
+  border: 3px solid var(--teal);
+  border-radius: 3.125rem;
+}
+
+.donation h3{
+  font-size: 1.375rem;
+  font-weight: 300;
+}
+
+.donation p{
+  margin-left: 0.4rem;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+.quizSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: 10px solid var(--accent-color);
+  box-shadow: 0px 1px 2px 1px #C18708 inset;
+  width: 22rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.quizSection div{
+  display: flex;
+  flex-direction: row;
+}
+
+.quizSection h4{
+  font-size: 1.375rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.quizSection img{
+  margin: 0.5rem;
+}
+
+.quizSection span{
+  font-weight: 600;
+}
+
+.quizSection button{
+  width: 14rem;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 1.875rem;
+  padding: 1rem;
+  font-family: var(--font-family);
+  font-size: 1.375rem;
+  margin-top: 1rem;
+}
+
+.quizSection a{
+  text-decoration: none;
+  color: var(--black);
 }
 
 .heading {
   transform: translate(0, -1rem); 
 }
 
+/*
 .line {
   border: 2px solid var(--accent-color); 
   width: 18%; 
@@ -83,59 +169,104 @@
   margin: 0.25rem 5rem; 
   border-radius: 30px;
 }
+*/
 
 .latestNews {
-  width: 100%;
+  width: 24.875rem;
   border-radius: 30px;
-  height: 10rem;
-  margin: 0.5rem 1rem;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  background-color: var(--light-green);
+  margin-top: 2rem;
 }
 
-.latestNewsImage {
-  transform: translate(0, 1rem); 
-  position: absolute; 
-  z-index: -1; 
-  margin-bottom: 1rem; 
+.latestNews div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.latestProjectsImage {
-  z-index: -1; 
-  transform: translate(0, 4rem); 
+.latestNews h4{
+  font-size: 1.375rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.latestNews img{
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .arrow {
   transform: scaleX(-1);
-  margin-top: 0.5rem;
 }
 
 .latestNewsButton {
   border: none;
-  background-color: var(--accent-color);
-  height: 38px;
-  width: 191px;
-  margin: 0.25rem 5rem;
+  font-family: var(--font-family);
+  background-color: var(--green);
+  width: 14rem;
+  height: 2.5rem;
   border-radius: 30px;
   display: flex;
   align-content: center;
   justify-content: center;
-  transform: translate(0, 2rem); 
+  font-size: 1.375rem;
+  font-weight: 500; 
+  margin: 1rem;
 }
 
-.latestProjectsButton {
-  border: none;
-  background-color: var(--accent-color);
-  height: 38px;
-  width: 191px;
-  margin: 0.25rem 5rem;
+.matching{
+  width: 24.875rem;
   border-radius: 30px;
   display: flex;
-  align-content: center;
+  flex-direction: column;
   justify-content: center;
-  transform: translate(0, 12rem); 
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: var(--light-teal);
+  margin-top: 2rem;
+}
+
+.matching div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.matching h4{
+  font-size: 1.375rem;
+  font-weight: 400;
+  margin-left: 3rem;
+}
+
+.matching img{
+  margin-left: 2.5rem;
+}
+
+.matchingButton{
+  font-family: var(--font-family);
+  background-color: var(--teal);
+  border: none;
+  border-radius: 1.875rem;
+  width: 14rem;
+  height: 2.5rem;
+  font-size: 1.375rem;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  margin-left: 6rem;
+  margin-bottom: 1rem;
+}
+
+.matchingButton a{
+  text-decoration: none;
+  color: var(--black);
 }
 
 .latestNewsLink {
@@ -150,7 +281,7 @@
   height: 310px;
   margin: 0.5rem 1rem;
   border-radius: 30px;
-  background-color: var(--secondary-color);
+  background-color: var(--light-pink);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -165,7 +296,7 @@
 }
 
 .adventureTitle {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 22px;
 }
 
@@ -179,10 +310,11 @@
 }
 
 .adventureButton {
+  font-family: var(--font-family);
   border: none;
-  background-color: var(--accent-color);
-  height: 70px;
+  background-color: var(--pink);
   width:  225px;
+  height: 2.5rem;
   margin: 1rem 5rem 2rem;
   border-radius: 30px;
 }
@@ -190,6 +322,6 @@
 .adventureLink {
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 22px;
 }
