@@ -16,7 +16,7 @@ export default function NavBar(){
                     </Link>
                 </li>
                 <li className={styles.learnMore}>
-                    <Link href="/Learn">
+                    <Link href="/LearnMore">
                         <div className={styles.iconLabel}>
                             <Image className={styles.navIcon} src="/images/learn_more_icon.svg" width={20} height={20} alt="learn more icon"/>
                             <span className={styles.label}>Learn</span>
