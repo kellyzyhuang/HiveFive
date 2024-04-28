@@ -1,0 +1,108 @@
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: var(--black-text);
+    min-height: 100vh;
+    margin: -10px;
+    font-family: "Lexend", sans-serif;
+}
+  
+.screen {
+    width: 429px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--cream);
+}
+
+.matchingSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    width: 24.813rem;
+    height: 13.75rem;
+    background-color: var(--light-green);
+    border-radius: 1.875rem;
+}
+
+.matchingSection img{
+    margin: 1rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.text h3{
+    line-height: 0.1rem;
+    margin-top: 4rem;
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+.text p{
+    font-weight: 300;
+}
+
+.matchingSection button{
+    background-color: inherit;
+    border: none;
+    border-radius: 1.875rem;
+    float: right;
+    transform: translate(3rem, -1rem);
+}
+
+.articlesSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 24.813rem;
+    height: 13.75rem;
+    background-color: var(--light-green);
+    border-radius: 1.875rem;
+}
+
+.articlesSection button{
+    background-color: inherit;
+    border: none;
+    border-radius: 1.875rem;
+    transform: translate(6.5rem, 3rem);
+}
+
+.textArticles, .textTeam{
+    margin-top: -2rem;
+    margin-left: 1rem;
+    line-height: 0.5rem;
+}
+
+.textArticles h3, .textTeam h3{
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+.textArticles p, .textTeam p{
+    font-weight: 300;
+}
+
+.teamSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 24.813rem;
+    height: 13.75rem;
+    background-color: var(--light-green);
+    border-radius: 1.875rem;
+}
+
+.teamSection button{
+    background-color: inherit;
+    border: none;
+    border-radius: 1.875rem;
+    transform: translate(7rem, 3rem);
+}
