@@ -2,7 +2,7 @@ import styles from "@/styles/LearnMore.module.css";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Image from "next/image";
-import NavBar from "@/components/Articles";
+import NavBar from "@/components/NavBar";
 
 export default function LearnMore(){
     return(
@@ -53,6 +53,7 @@ export default function LearnMore(){
                         </div>
                     </div>
                 </div>
+                <NavBar/>
             </main>
         </>
     )

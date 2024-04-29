@@ -76,6 +76,7 @@
   border: 10px solid var(--accent-color);
   box-shadow: 0px 1px 2px 1px #C18708 inset;
   width: 22rem;
+  height: 16rem; 
   padding: 1rem;
   margin-top: 2rem;
 }
@@ -83,6 +84,7 @@
 .quizSection div{
   display: flex;
   flex-direction: row;
+  transform: translate(0, -3rem); 
 }
 
 .quizSection h4{
@@ -100,14 +102,22 @@
 }
 
 .quizSection button{
+  position: absolute; 
   width: 14rem;
   background-color: var(--accent-color);
-  border: none;
+  border: 3px solid var(--accent-color);
   border-radius: 1.875rem;
   padding: 1rem;
   font-family: var(--font-family);
   font-size: 1.375rem;
   margin-top: 1rem;
+  transform: translate(0, 5rem);
+  transition: 0.5s;  
+}
+
+.quizButton:hover {
+  background-color: var(--secondary-color); 
+  border: 3px solid var(--accent-color);
 }
 
 .quizSection a{
@@ -149,11 +159,11 @@
 }
 
 .newsArrow {
-  transform: scaleX(-1) translate(1rem, -0.35rem); 
+  transform: scaleX(-1) translate(1rem, -0.55rem); 
 }
 
 .matchingArrow {
-  transform: scaleX(-1) translate(1rem, 0.20rem); 
+  transform: scaleX(-1) translate(1rem, 0.25rem); 
 }
 
 .latestNewsButton {
@@ -163,18 +173,26 @@
   width: 14rem;
   height: 2.5rem;
   border-radius: 30px;
+  border: 3px solid var(--green); 
   display: flex;
   justify-content: center;
   margin: 1rem;
+  transition: 0.5s; 
+}
+
+.latestNewsButton:hover {
+  background-color: var(--light-green); 
+  border: 3px solid var(--green); 
 }
 
 .latestNewsLink {
-  padding-top: 0.25rem; 
+  padding-top: 0.15rem; 
   padding-left: 1.5rem; 
   font-size: 1.375rem; 
   font-weight: 500; 
   text-decoration: none; 
   color: var(--black); 
+  width: 10rem; 
 }
 
 .matching{
@@ -187,6 +205,7 @@
   flex-wrap: wrap;
   background-color: var(--light-teal);
   margin-top: 2rem;
+  height: 13rem; 
 }
 
 .matchingLink {
@@ -198,17 +217,20 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem; 
+  padding-top: -5rem; 
 }
 
 .matching h4{
   font-size: 1.375rem;
   font-weight: 400;
   margin-left: 3rem;
+  margin-top: -3rem; 
 }
 
 .matching img{
-  margin-left: 2.5rem;
+  margin-left: 2rem;
+  margin-top: -3.6rem; 
 }
 
 .matchingButton{
@@ -224,6 +246,15 @@
   text-align: center;
   margin-left: 6rem;
   margin-bottom: 1rem;
+  border: 3px solid var(--teal); 
+  transition: 0.5s; 
+  position: absolute; 
+  transform: translate(-1rem, 4.7rem); 
+}
+
+.matchingButton:hover {
+background-color: var(--light-teal); 
+border: 3px solid var(--teal); 
 }
 
 .matchingButton a{
@@ -266,12 +297,18 @@
 
 .adventureButton {
   font-family: var(--font-family);
-  border: none;
+  border: 3px solid var(--pink);
   background-color: var(--pink);
   width:  225px;
   height: 2.5rem;
   margin: 1rem 5rem 2rem;
   border-radius: 30px;
+  transition: 0.5s; 
+}
+
+.adventureButton:hover {
+  background-color: var(--light-pink); 
+  border: 3px solid var(--pink);
 }
 
 .adventureLink {

@@ -98,6 +98,7 @@
     height: 13.75rem;
     background-color: var(--light-green);
     border-radius: 1.875rem;
+    margin-bottom: 10rem; 
 }
 
 .teamSection button{

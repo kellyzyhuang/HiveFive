@@ -1,7 +1,7 @@
 import styles from "@/styles/Matching.module.css";
 import Image from "next/image";
 import Header from "@/components/Header";
-import NavBar from "@/components/Articles";
+import NavBar from "@/components/NavBar";
 import Link from "next/link";
 
 
