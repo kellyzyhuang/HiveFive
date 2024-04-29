@@ -57,3 +57,7 @@
     font-family: 'Lexend', sans-serif;
 }
 
+.startLink a {
+    color: black; 
+    text-decoration: none; 
+}
