@@ -2,6 +2,7 @@ import styles from "@/styles/Matching.module.css";
 import Image from "next/image";
 import Header from "@/components/Header";
 import NavBar from "@/components/Articles";
+import Link from "next/link";
 
 
 export default function Matching(){
@@ -18,7 +19,11 @@ export default function Matching(){
                     <div className={styles.textBtnPlants}>
                         <h3>Plants</h3>
                         <p>Explore the Plant Matches for Bees!</p>
-                        <button><Image src="/images/next_arrow_teal.svg" alt="teal next arrow" width={50} height={50}/></button>
+                        <button>
+                            <Link href="/Plants">
+                                <Image src="/images/next_arrow_teal.svg" alt="teal next arrow" width={50} height={50}/>
+                            </Link>
+                        </button>
                     </div>
                 </div>
                 <div className={styles.speciesSection}>
