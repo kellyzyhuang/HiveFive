@@ -29,10 +29,9 @@
               <h2 className={styles.heading}>Welcome back, <span>Anika!</span></h2>
             </div>
             <div className={styles.donation}>
-              <h3>Total Donations: </h3>
-              <p> { correctAnswersTotal } </p>
+              <Link className={styles.donationLink} href="/"><h3>Total Donations: </h3></Link>
+              <p> CAD ${ correctAnswersTotal } </p>
             </div>
-            {/*<div className={styles.line}></div>*/}
             <div className={styles.quizSection}>
               <div>
                 <Image src="/images/Trivia.svg" alt="wondering boy with a question mark" width={127} height={140}/>
@@ -40,15 +39,6 @@
               </div>
               <button><Link href="/Quiz">Start Quiz</Link></button>
             </div>
-            {/*<div className={styles.start}>
-              <Image src="/images/happy_bee.svg" width={150} height={150} alt="beenard" className={styles.beenardStart}/>
-              <button className={styles.startButtonLearn}>
-                <Link className={styles.startLink} href="/Learn">Start Learning</Link>
-              </button>
-              <button className={styles.startButton}>
-                <Link className={styles.startLink} href="/Quiz">Start Quiz</Link>
-              </button>
-            </div>*/}
               <div className={styles.latestNews}>
                 <div>
                   <Image src="/images/article2.svg" alt="camping tent in the forest" width={176} height={115}/>
@@ -56,7 +46,7 @@
                 </div>
                 <button className={styles.latestNewsButton}>
                   <Link className={styles.latestNewsLink} href="/Learn">Latest News</Link>
-                  <Image src="/images/back.svg" width={20} height={20} alt="arrow" className={styles.arrow}/>
+                  <Image src="/images/back.svg" width={20} height={20} alt="arrow" className={styles.newsArrow}/>
                 </button>
               </div>
               <div className={styles.matching}>
@@ -65,8 +55,8 @@
                   <h4>Find the Perfect Match!</h4>
                 </div>
                 <button className={styles.matchingButton}>
-                  <Link href="/Matching">Try Matching</Link>
-                  <Image src="/images/back.svg" width={20} height={20} alt="arrow" className={styles.arrow}/>
+                  <Link className={styles.matchingLink} href="/Matching">Try Matching</Link>
+                  <Image src="/images/back.svg" width={20} height={20} alt="arrow" className={styles.matchingArrow}/>
                 </button>
               </div>
               <div className={styles.adventure}>
@@ -76,7 +66,7 @@
                 </div>                
                 <Image src="/images/happy_bee.svg" width={150} height={150} alt="beenard" className={styles.beenardAdventure}/>
                 <button className={styles.adventureButton}>
-                  <Link className={styles.adventureLink} href="/Quiz">Play Now</Link>
+                  <Link className={styles.adventureLink} href="/">Play Now</Link>
                 </button>
             </div>
             <div className={styles.buffer}></div>

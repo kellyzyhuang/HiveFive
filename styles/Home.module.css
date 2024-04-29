@@ -119,58 +119,6 @@
   transform: translate(0, -1rem); 
 }
 
-/*
-.line {
-  border: 2px solid var(--accent-color); 
-  width: 18%; 
-  height: 0; 
-  position: absolute; 
-  transform: translate(0, 12.5rem); 
-}
-
-.start {
-  width: 399px;
-  height: 310px;
-  margin: 0.5rem 1rem;
-  border-radius: 30px;
-  background-color: var(--secondary-color);
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-.beenardStart {
-  width: 100%;
-  margin: 1rem 0 0.5rem 0;
-}
-
-.startButton {
-  border: none;
-  background-color: var(--accent-color);
-  height: 38px;
-  width: 191px;
-  margin: 0.25rem 5rem;
-  border-radius: 30px;
-}
-
-.startLink {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  font-size: 22px;
-}
-
-.startButtonLearn {
-  background-color: var(--white-text);
-  border: none;
-  height: 38px;
-  width: 191px;
-  margin: 0.25rem 5rem; 
-  border-radius: 30px;
-}
-*/
-
 .latestNews {
   width: 24.875rem;
   border-radius: 30px;
@@ -200,23 +148,33 @@
   margin-top: 1rem;
 }
 
-.arrow {
-  transform: scaleX(-1);
+.newsArrow {
+  transform: scaleX(-1) translate(1rem, -0.35rem); 
+}
+
+.matchingArrow {
+  transform: scaleX(-1) translate(1rem, 0.20rem); 
 }
 
 .latestNewsButton {
   border: none;
-  font-family: var(--font-family);
+  font-family: "Lexend", sans-serif; 
   background-color: var(--green);
   width: 14rem;
   height: 2.5rem;
   border-radius: 30px;
   display: flex;
-  align-content: center;
   justify-content: center;
-  font-size: 1.375rem;
-  font-weight: 500; 
   margin: 1rem;
+}
+
+.latestNewsLink {
+  padding-top: 0.25rem; 
+  padding-left: 1.5rem; 
+  font-size: 1.375rem; 
+  font-weight: 500; 
+  text-decoration: none; 
+  color: var(--black); 
 }
 
 .matching{
@@ -229,6 +187,10 @@
   flex-wrap: wrap;
   background-color: var(--light-teal);
   margin-top: 2rem;
+}
+
+.matchingLink {
+  padding-left: 0.6rem; 
 }
 
 .matching div{
@@ -269,17 +231,9 @@
   color: var(--black);
 }
 
-.latestNewsLink {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  margin-top: 0.5rem;
-}
-
 .adventure {
   width: 399px;
   height: 310px;
-  margin: 0.5rem 1rem;
   border-radius: 30px;
   background-color: var(--light-pink);
   display: flex;
@@ -288,6 +242,7 @@
   flex-wrap: wrap;
   transform: translate(0, 8rem); 
   margin-bottom: 5rem; 
+  margin-top: -6rem; 
 }
 
 .adventureText {
@@ -324,4 +279,9 @@
   color: black;
   font-weight: 500;
   font-size: 22px;
+}
+
+.donationLink {
+  text-decoration: none; 
+  color: var(--black); 
 }
