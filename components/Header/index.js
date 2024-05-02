@@ -2,10 +2,12 @@ import { useState } from 'react';
 import styles from './Header.module.css';
 import Image from 'next/image'; 
 import Link from 'next/link';
+import { useCorrectAnswers } from '../../CorrectAnswersContext';
 
 export default function Header({ title, backImage, link, exit }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isPopupOpen, setIsPopupOpen] = useState(false); // State variable to track popup open/close
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const { correctAnswersTotal } = useCorrectAnswers();
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -13,30 +15,37 @@ export default function Header({ title, backImage, link, exit }) {
 
   const togglePopup = () => {
     setIsPopupOpen(!isPopupOpen);
-  };
-  
-  return(
+  };  
+
+  return (
     <header className={styles.header}>
       <ul className={styles.list}>
         <li className={styles.listItem}>
+          {!exit && !link && (
+            <div className={styles.pointsCounter}>
+              <Image src="/Images/Gem.svg"  width={30} height={30} alt="Bee icon" className={styles.beeIcon}/>
+              <span className={styles.counter}>{correctAnswersTotal}</span>
+            </div>
+            
+          )}
           {exit ? (
             <button 
               style={{
-              border: 'none',
-              padding: 0,
-              background: 'none'
+                border: 'none',
+                padding: 0,
+                background: 'none'
               }} 
-              onClick={togglePopup}>
+              onClick={togglePopup}
+            >
               {backImage && <Image src={backImage} width={20} height={20} alt="Back icon" className={styles.exitIcon}/>}
             </button>
           ) : (
             link && (
               <Link href="/Home">
-                  {backImage && <Image src={backImage} width={20} height={20} alt="Back icon" className={styles.backIcon}/>}
+                {backImage && <Image src={backImage} width={20} height={20} alt="Back icon" className={styles.backIcon}/>}
               </Link>
             )
           )}
-
         </li>
         <li className={styles.listItem}>
           <h1 className={styles.pageTitle}>{title}</h1>
@@ -60,17 +69,16 @@ export default function Header({ title, backImage, link, exit }) {
         </div>
       )}
       {isPopupOpen && (
-
-      <div className={`${styles.overlay}`}>
-        <div className={styles.popup}>
-          <p>Are you sure you want to leave? your progress will be not be saved.</p>
-          <Link href="/Home">
+        <div className={`${styles.overlay}`}>
+          <div className={styles.popup}>
+            <p>Are you sure you want to leave? your progress will not be saved.</p>
+            <Link href="/Home">
               <button className={`${styles.popUpButton} ${styles.leave}`}>Leave</button>
-          </Link>
-          <button className={styles.popUpButton} onClick={togglePopup}>Stay</button>
+            </Link>
+            <button className={styles.popUpButton} onClick={togglePopup}>Stay</button>
+          </div>
         </div>
-      </div>
       )}
     </header>
-  )
+  );
 }
