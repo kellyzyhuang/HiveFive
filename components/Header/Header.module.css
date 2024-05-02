@@ -25,6 +25,14 @@
   transform: translate(1rem, 1.5rem); 
 }
 
+.pointsCounter {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 4rem;
+}
+
 .counter {
   border: 2px solid black; 
   width: 3rem; 
@@ -34,8 +42,7 @@
   background-color: none; 
   display: flex; 
   justify-content: center;
-  align-items: center;
-  margin-top: 2rem;  
+  align-items: center; 
 }
 
 .settings a{
