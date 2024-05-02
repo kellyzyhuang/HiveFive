@@ -30,7 +30,7 @@
             </div>
             <div className={styles.donation}>
               <Link className={styles.donationLink} href="/"><h3>Total Donations: </h3></Link>
-              <p> CAD ${ correctAnswersTotal } </p>
+              <p>CAD ${correctAnswersTotal * 5 / 100}</p>
             </div>
             <div className={styles.quizSection}>
               <div>
