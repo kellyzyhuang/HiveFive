@@ -1,0 +1,105 @@
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black-text);
+  min-height: 100vh;
+  margin: -10px;
+  font-family: "Lexend", sans-serif; 
+}
+
+.screen {
+  width: 430px;
+  height: 100%;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buffer {
+  height: 10rem;
+  width: 100%;
+}
+
+.graph {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.graphHead {
+  width: 100%;
+  text-align: center;
+}
+
+.circle {
+  position: absolute;
+  width: 22.8rem;
+  height: 22.8rem;
+  border-radius: 50%;
+  background-color: rgba(254, 236, 172, 0.5); /* 50% transparent */
+  transform: translateY(2.1rem);
+}
+
+.circleTwo {
+  position: absolute;
+  width: 11.4rem;
+  height: 11.4rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1); /* 50% transparent */
+  transform: translateY(21.6rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleTwo p {
+  width: 7rem;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+
+.impact {
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  width: 223px;
+  height: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+
+.summaryList {
+  width: 95%;
+}
+
+.summary {
+  font-size: 22px;
+  font-weight: bold;
+  width: 95%;
+  text-align: left;
+  margin: 0;
+  margin-left: 2rem;
+}
+
+.underline {
+  width: 13rem;
+  border: none;
+  border-top: 0.35rem solid var(--accent-color);
+  border-radius: 5px;
+  margin: 0.5rem 0 1rem 2rem;
+}
+
+.list {
+  width: 80%;
+  height: 15rem;
+}
+
+.entry {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
