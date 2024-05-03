@@ -28,14 +28,13 @@ export default function Activity() {
                 </div>
               </div>
               <div className={styles.moneyDonated}>
-                <img src="/images/money_donated.jpg" alt="money jar" className={styles.moneyDonatedImage}/>
-                  <div className={styles.label}>
-                    <h3>Money Donated</h3>
-                    <p>Track your earnings!</p>
-                  </div>
+              <a href="/Donations"><img src="/images/money_donated.jpg" alt="bar graph" className={styles.userStatsImage}/></a>
+                <div className={styles.label}>
+                  <h3>Money Donated</h3>
+                  <p>Track your earnings!</p>
+                </div>
               </div>
-            </div>
-            <nav className={styles.nav}>{/*to be replaced by real nav bar*/}</nav>    
+            </div>   
         </div>  
         <NavBar/>
       </main>
