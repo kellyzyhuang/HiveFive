@@ -1,4 +1,3 @@
-// CorrectAnswersContext.js
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const CorrectAnswersContext = createContext();
