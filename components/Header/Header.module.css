@@ -60,7 +60,7 @@
 
 .menu {
   position: absolute;
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
   width: 250px;
   height: 100%;
   margin-left: 180px;
