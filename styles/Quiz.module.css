@@ -72,15 +72,64 @@
 
 .microphone {
   background-color: var(--accent-color);
+  margin: 2rem 0;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0.1rem 0.4rem 0.1rem var(--shadow);
+}
+
+.microphoneIcon {
+  margin: 1rem;
   height: 3rem;
   width: 3rem;
-  margin: 2rem 0;
-  padding: 1rem;
-  border-radius: 50%;
-  box-shadow: 0.1rem 0.4rem 0.1rem var(--shadow);
 }
 
 .exitIcon {
   width: 20%; 
   height: auto; 
+}
+
+.overlay {
+  position: fixed;
+  width: 430px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+
+.popup {
+  position: absolute;
+  top: 20rem;
+  left: 1.5rem;
+  width: 381px;
+  height: 218px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: var(--white-text);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.popUpButton {
+  height: 30px;
+  width: 107px;
+  border: none;
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  margin: 0rem 0.5rem;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.leave {
+  background-color: var(--secondary-color);
+}
+
+.popup p{
+  text-align: center;
+  padding: 0rem 5rem;
+  height: 30px;
+  margin-top: 3rem;
 }

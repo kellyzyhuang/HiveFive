@@ -1,9 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { quiz } from '../data/inventory.js';
 import Header from "@/components/Header/index.js";
 import styles from "@/styles/Quiz.module.css";
 import QuizResults from "@/components/QuizResults";
-import QuizPopup from "@/components/QuizPopup"; 
+import QuizPopup from "@/components/QuizPopup";
 import { useCorrectAnswers } from '../CorrectAnswersContext.js';
 
 export default function Quiz() {
@@ -17,7 +17,7 @@ export default function Quiz() {
   const { updateCorrectAnswersTotal } = useCorrectAnswers();
 
   const displayAnswer = (option) => {
-    const isCorrect = option == currentQuestion.answer;
+    const isCorrect = option === currentQuestion.answer;
     setIsCorrectAnswer(isCorrect);
     setPopup(true);
   
@@ -51,13 +51,9 @@ export default function Quiz() {
     setQuizComplete(false);
   };
 
-  if (quizComplete) {
-    return <QuizResults 
-             correctAnswersTotal={correctAnswersTotal} 
-             questionCount={quiz.questions.length}
-             onRestart={restartQuiz}
-            />;
-  }; 
+  const togglePopup = () => {
+    setPopup(!popup);
+  };
 
   return (
     <>
@@ -87,14 +83,19 @@ export default function Quiz() {
             </div>
           ))}
         </div>
+        <button className={styles.microphone} onClick={togglePopup}>
+          <img className={styles.microphoneIcon} src={"/images/mic_icon.svg"} width={1} height={1}></img> 
+        </button>
         {popup && (
-          <QuizPopup 
-            isCorrect={isCorrectAnswer}
-            answer={currentQuestion.answer}
-            onNextQuestion={nextQuestion}
-          />
+          <div className={`${styles.overlay}`}>
+          <div className={styles.popup}>
+            <p>Allow the High Five app to access your device’s microphone?</p>
+            <button className={styles.popUpButton} onClick={togglePopup}>Once</button>
+            <button className={styles.popUpButton} onClick={togglePopup}>Always</button>
+            <button className={styles.popUpButton} onClick={togglePopup}>Never</button>
+          </div>
+        </div>
         )}
-        <img className={styles.microphone} src={"/images/mic_icon.svg"} width={1} height={1}></img> 
       </div>
     </>
   );
