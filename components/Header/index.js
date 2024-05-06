@@ -23,7 +23,7 @@ export default function Header({ title, backImage, link, exit }) {
         <li className={styles.listItem}>
           {!exit && !link && (
             <div className={styles.pointsCounter}>
-              <Image src="/Images/Gem.svg"  width={30} height={30} alt="Bee icon" className={styles.beeIcon}/>
+              <Image src="/images/Gem.svg"  width={30} height={30} alt="Bee icon" className={styles.beeIcon}/>
               <span className={styles.counter}>{correctAnswersTotal}</span>
             </div>
             
