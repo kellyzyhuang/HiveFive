@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
+import ToggleSwitch from "@/components/Toggle";
 
 export default function Settings() {
   return(
@@ -36,7 +37,9 @@ export default function Settings() {
                     <h5>Keyboard Tabbing</h5>
                     <p>Use your keyboard to navigate the app</p>
                   </div>
-                  {/* <img/> to be replaced by toggle button */}
+                  <div className={styles.toggle}>
+                    <ToggleSwitch/>
+                  </div>
                 </li>
                 <li className={styles.listItem}>
                 <img src="/images/sound.svg" alt="sound icon" className={styles.icon}/>
@@ -44,7 +47,9 @@ export default function Settings() {
                     <h5>Sound</h5>
                     <p>Adjust notifications and general audio</p>
                   </div>
-                  {/* <img/> to be replaced by toggle button */}
+                  <div className={styles.toggle2}>
+                    <ToggleSwitch/>
+                  </div>
                 </li>
                 <li className={styles.listItem}>
                 <img src="/images/dark_mode.svg" alt="dark mode icon" className={styles.icon}/>
@@ -52,7 +57,9 @@ export default function Settings() {
                     <h5>Dark Mode</h5>
                     <p>Switch to dark mode</p>
                   </div>
-                  {/* <img/> to be replaced by toggle button */}
+                  <div className={styles.toggle3}>
+                    <ToggleSwitch/>
+                  </div>
                 </li>
                 <li className={styles.listItem}>
                 <img src="/images/font_size.svg" alt="font size icon" className={styles.icon}/>
@@ -61,7 +68,7 @@ export default function Settings() {
                     <p>Switch to a different sized font</p>
                   </div>
                   <form>
-                    <select></select>
+                    <select className={styles.dropdown}></select>
                   </form>
                 </li>
                 <li className={styles.listItem}>
@@ -71,7 +78,7 @@ export default function Settings() {
                     <p>Switch to a different typeface</p>
                   </div>
                   <form>
-                    <select></select>
+                    <select className={styles.dropdown2}></select>
                   </form>
                 </li>
                 <li className={styles.listItem}>
@@ -81,7 +88,7 @@ export default function Settings() {
                     <p>Switch to a different language</p>
                   </div>
                   <form>
-                    <select></select>
+                    <select className={styles.dropdown3}></select>
                   </form>
                 </li>
               </ul>

@@ -24,7 +24,7 @@ export default function NavBar(){
                     </Link>
                 </li>
                 <li className={styles.quiz}>
-                    <Link href={'/Quiz'}>
+                    <Link href={'/QuizCategory'}>
                         <div className={styles.iconLabel}>
                             <Image className={styles.navIcon} src="/images/quiz_icon.svg" width={20} height={20} alt="quiz icon"/>
                             <span className={styles.label}>Quiz</span>
