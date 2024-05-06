@@ -15,7 +15,7 @@ export default function Game() {
       </Head>
       <main className={styles.main}>
         <div className={styles.screen}>
-        <Link className={styles.gameExit} href="/home">
+        <Link className={styles.gameExit} href="/Home">
           <Image src="/images/x.svg"  width={30} height={30} alt="exit" className={styles.backImg}/>
         </Link>
           <Spline scene="https://prod.spline.design/NKMlXnwqxeA6QkkB/scene.splinecode" />
