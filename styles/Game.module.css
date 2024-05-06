@@ -31,4 +31,8 @@
   height: 3rem;
   margin: 1rem;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-180px, -430px);
 }
