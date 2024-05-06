@@ -28,7 +28,6 @@
               <p>Are you ready to save the bees?</p>
               <h2 className={styles.heading}>Welcome back, <span>Anika!</span></h2>
             </div>
-            <button href="/" className={styles.backGame}><Image src="/images/x.svg"  width={30} height={30} alt="back" className={styles.backImg}/></button>
             <div className={styles.donation}>
               <Link className={styles.donationLink} href="/Donations"><h3>Total Donations: </h3></Link>
               <p>CAD ${(correctAnswersTotal * 5 / 100).toFixed(2)}</p>
