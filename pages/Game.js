@@ -14,7 +14,6 @@ export default function Game() {
       </Head>
       <main className={styles.main}>
         <div className={styles.screen}>
-          <button href="/" className={styles.backGame}><Image src="/images/x.svg"  width={30} height={30} alt="back" className={styles.backImg}/></button>
           <Spline scene="https://prod.spline.design/NKMlXnwqxeA6QkkB/scene.splinecode" />
         </div>
       </main>
