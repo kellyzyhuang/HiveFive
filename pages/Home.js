@@ -29,7 +29,7 @@
               <h2 className={styles.heading}>Welcome back, <span>Anika!</span></h2>
             </div>
             <div className={styles.donation}>
-              <Link className={styles.donationLink} href="/"><h3>Total Donations: </h3></Link>
+              <Link className={styles.donationLink} href="/Donations"><h3>Total Donations: </h3></Link>
               <p>CAD ${(correctAnswersTotal * 5 / 100).toFixed(2)}</p>
             </div>
             <div className={styles.quizSection}>
