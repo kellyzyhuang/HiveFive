@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Game.module.css'
 import Spline from '@splinetool/react-spline';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Game() {
   return (
@@ -14,6 +15,9 @@ export default function Game() {
       </Head>
       <main className={styles.main}>
         <div className={styles.screen}>
+        <Link className={styles.gameExit} href="/">
+          <Image src="/images/x.svg"  width={30} height={30} alt="exit" className={styles.backImg}/>
+        </Link>
           <Spline scene="https://prod.spline.design/NKMlXnwqxeA6QkkB/scene.splinecode" />
         </div>
       </main>
