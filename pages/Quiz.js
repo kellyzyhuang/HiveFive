@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { quiz } from '../data/inventory.js';
 import Header from "@/components/Header/index.js";
 import styles from "@/styles/Quiz.module.css";
 import QuizResults from "@/components/QuizResults";
-import QuizPopup from "@/components/QuizPopup";
+import QuizPopup from "@/components/QuizPopup"; 
 import { useCorrectAnswers } from '../CorrectAnswersContext.js';
 
 export default function Quiz() {
@@ -15,9 +15,10 @@ export default function Quiz() {
   const [quizComplete, setQuizComplete] = useState(false);
   const currentQuestion = quiz.questions[currentQuestionNumber];
   const { updateCorrectAnswersTotal } = useCorrectAnswers();
+  const [micPopupVisible, setMicPopupVisible] = useState(false);
 
   const displayAnswer = (option) => {
-    const isCorrect = option === currentQuestion.answer;
+    const isCorrect = option == currentQuestion.answer;
     setIsCorrectAnswer(isCorrect);
     setPopup(true);
   
@@ -51,9 +52,17 @@ export default function Quiz() {
     setQuizComplete(false);
   };
 
-  const togglePopup = () => {
-    setPopup(!popup);
+  const toggleMicPopup = () => {
+    setMicPopupVisible(!micPopupVisible); // Renamed function
   };
+
+  if (quizComplete) {
+    return <QuizResults 
+             correctAnswersTotal={correctAnswersTotal} 
+             questionCount={quiz.questions.length}
+             onRestart={restartQuiz}
+            />;
+  }; 
 
   return (
     <>
@@ -83,18 +92,25 @@ export default function Quiz() {
             </div>
           ))}
         </div>
-        <button className={styles.microphone} onClick={togglePopup}>
+        {popup && (
+          <QuizPopup 
+            isCorrect={isCorrectAnswer}
+            answer={currentQuestion.answer}
+            onNextQuestion={nextQuestion}
+          />
+        )}
+        <button className={styles.microphone}  onClick={toggleMicPopup}>
           <img className={styles.microphoneIcon} src={"/images/mic_icon.svg"} width={1} height={1}></img> 
         </button>
-        {popup && (
+        {micPopupVisible && (
           <div className={`${styles.overlay}`}>
-          <div className={styles.popup}>
-            <p>Allow the High Five app to access your device’s microphone?</p>
-            <button className={styles.popUpButton} onClick={togglePopup}>Once</button>
-            <button className={styles.popUpButton} onClick={togglePopup}>Always</button>
-            <button className={styles.popUpButton} onClick={togglePopup}>Never</button>
+            <div className={styles.popup}>
+              <p>Allow the High Five app to access your device’s microphone?</p>
+              <button className={styles.popUpButton} onClick={toggleMicPopup}>Once</button>
+              <button className={styles.popUpButton} onClick={toggleMicPopup}>Always</button>
+              <button className={styles.popUpButton} onClick={toggleMicPopup}>Never</button>
+            </div>
           </div>
-        </div>
         )}
       </div>
     </>
