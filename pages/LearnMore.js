@@ -19,7 +19,7 @@ export default function LearnMore(){
                             </div>
                             <button>
                                 <Link href="/Matching">
-                                    <Image src="/images/next_arrow_green.svg" alt="green next arrow" width={50} height={50}/>
+                                    <Image src="/images/next_arrow_green.svg" alt="green next arrow" width={50} height={50} className={styles.button}/>
                                 </Link>
                             </button>
                         </div> 
@@ -33,7 +33,7 @@ export default function LearnMore(){
                             </div>
                             <button>
                                 <Link href="/Learn">
-                                    <Image src="/images/next_arrow_green.svg" alt="green next arrow" width={50} height={50}/>
+                                    <Image src="/images/next_arrow_green.svg" alt="green next arrow" width={50} height={50} className={styles.button}/>
                                 </Link>
                             </button>
                         </div>
@@ -47,7 +47,7 @@ export default function LearnMore(){
                             </div>
                             <button>
                                 <Link href="/Team">
-                                    <Image src="/images/next_arrow_green.svg" alt="green next arrow" width={50} height={50}/>
+                                    <Image src="/images/next_arrow_green.svg" alt="green next arrow" width={50} height={50} className={styles.button}/>
                                 </Link>
                             </button>
                         </div>

@@ -4,6 +4,7 @@ import styles from '@/styles/Donations.module.css';
 import NavBar from "@/components/NavBar";
 import DoughnutChart from "@/components/DoughnutChart";
 import { useCorrectAnswers } from '../CorrectAnswersContext';
+import Link from "next/link";
 
 export default function Donations() {
     const { correctAnswersTotal } = useCorrectAnswers();

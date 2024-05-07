@@ -30,7 +30,7 @@ export default function Activity() {
                     </div>
                     <button>
                         <Link href="/Stats">
-                            <Image src="/images/yellowArrow.svg" alt="pink next arrow" width={50} height={50}/>
+                            <Image src="/images/yellowArrow.svg" alt="pink next arrow" width={50} height={50} className={styles.button}/>
                         </Link>
                     </button>
                 </div> 
@@ -44,7 +44,7 @@ export default function Activity() {
                     </div>
                     <button>
                         <Link href="/Donations">
-                            <Image src="/images/yellowArrow.svg" alt="pink next arrow" width={50} height={50}/>
+                            <Image src="/images/yellowArrow.svg" alt="pink next arrow" width={50} height={50} className={styles.button}/>
                         </Link>
                     </button>
                 </div>

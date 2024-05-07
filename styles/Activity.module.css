@@ -121,3 +121,12 @@
   border-radius: 5px;
   margin-top: -1.5rem;
 }
+
+.button {
+  transition: 0.3s ease-in-out; 
+}
+
+.button:hover {
+  width: 55px; 
+  height: 55px; 
+}

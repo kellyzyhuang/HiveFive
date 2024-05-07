@@ -22,8 +22,8 @@ export default function quizCategory(){
                                 <p>Challenge your brain with bee statistics!</p>
                             </div>
                             <button>
-                                <Link href="/Quiz">
-                                    <Image src="/images/pinkArrow.svg" alt="pink next arrow" width={50} height={50}/>
+                                <Link href="/MathQuiz">
+                                    <Image src="/images/pinkArrow.svg" alt="pink next arrow" width={50} height={50} className={styles.button}/>
                                 </Link>
                             </button>
                         </div> 
@@ -37,7 +37,7 @@ export default function quizCategory(){
                             </div>
                             <button>
                                 <Link href="/Quiz">
-                                    <Image src="/images/pinkArrow.svg" alt="pink next arrow" width={50} height={50}/>
+                                    <Image src="/images/pinkArrow.svg" alt="pink next arrow" width={50} height={50} className={styles.button}/>
                                 </Link>
                             </button>
                         </div>

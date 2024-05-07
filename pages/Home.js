@@ -37,7 +37,7 @@
                 <Image src="/images/Trivia.svg" alt="wondering boy with a question mark" width={127} height={140}/>
                 <h4>Maximize Your <span>Points</span> Potential Today!</h4>
               </div>
-              <button className={styles.quizButton}><Link href="/Quiz">Start Quiz</Link></button>
+              <button className={styles.quizButton}><Link href="/QuizCategory">Start Quiz</Link></button>
             </div>
               <div className={styles.latestNews}>
                 <div>

@@ -85,5 +85,21 @@
   position: absolute; 
   width: 70%; 
   height: auto; 
-  transform: translate(9rem, 3rem) rotate(10deg); 
+  transform: translate(9rem, 2rem) rotate(10deg); 
+  animation: beenard 3s infinite ease-in-out; 
 }
+
+@keyframes beenard 
+{
+  0% {
+    transform: translate(9rem, 2rem); 
+  }
+  50% {
+    transform: translate(9rem, 3rem); 
+  }
+  100% {
+    transform: translate(9rem, 2rem); 
+  }
+
+}
+

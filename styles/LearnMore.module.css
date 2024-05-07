@@ -107,3 +107,13 @@
     border-radius: 1.875rem;
     transform: translate(7rem, 3rem);
 }
+
+.button {
+    transition: 0.3s ease-in-out; 
+}
+
+.button:hover {
+    width: 55px; 
+    height: 55px; 
+}
+
