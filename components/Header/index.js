@@ -23,7 +23,7 @@ export default function Header({ title, backImage, link, exit }) {
         <li className={styles.listItem}>
           {!exit && !link && (
             <div className={styles.pointsCounter}>
-              <Image src="/images/gem.svg"  width={30} height={30} alt="Bee icon" className={styles.beeIcon}/>
+              <Image src="/images/gem.svg"  width={30} height={30} alt="Gem icon" className={styles.gemIcon}/>
               <span className={styles.counter}>{correctAnswersTotal}</span>
             </div>
             
@@ -52,8 +52,9 @@ export default function Header({ title, backImage, link, exit }) {
         </li>
         <li className={styles.listItem}>
           <button className={styles.navIcon} onClick={toggleMenu}>
-            <Image src="/images/Hamburger.svg" width={40} height={40} alt="Hamburger icon"/>
+            <Image src="/images/Hamburger.svg" width={40} height={40} alt="Hamburger icon" className={styles.menuImage}/>
           </button>
+          {/* <p className={styles.navIconLabel}>Menu</p> */}
         </li>
       </ul>
       {isMenuOpen && (

@@ -12,6 +12,23 @@
 
 .navIcon {
     width: 2rem;
+    padding-left: 0.5rem; 
+    padding-right: 0.5rem; 
+    padding-top: 0.5rem; 
+    padding-bottom: 0.1rem; 
+}
+
+.iconContainer {
+    width: 1.75rem; 
+    padding-right: 1.2rem; 
+    transition: 0.3s; 
+}
+
+.iconContainer:hover {
+    cursor: pointer; 
+    background-color: var(--secondary-color); 
+    border-radius: 50px; 
+    width: 1.75rem; 
 }
 
 .navList{
@@ -33,7 +50,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0.2rem;
 }
 
 .label {

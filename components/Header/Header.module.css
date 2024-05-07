@@ -31,11 +31,16 @@
   align-items: center;
   justify-content: space-between;
   width: 4rem;
+  margin-right: -1rem; 
+}
+
+.gemIcon {
+  padding-left: -3rem; 
 }
 
 .counter {
-  border: 2px solid black; 
-  width: 3rem; 
+  border: 1.5px solid black; 
+  min-width: 2rem; 
   height: 1rem; 
   padding: 0.2rem;  
   border-radius: 20px; 
@@ -43,6 +48,7 @@
   display: flex; 
   justify-content: center;
   align-items: center; 
+  margin-left: 0.5rem; 
 }
 
 .settings a{
@@ -97,6 +103,10 @@
   transform: translate(0.5rem, 1.5rem); 
 }
 
+.navIcon:hover {
+  cursor: pointer;
+}
+
 .hamIcon {
   margin: 0rem 2rem -0.5rem 3rem;
 }
@@ -141,4 +151,17 @@
   padding: 0rem 5rem;
   height: 30px;
   margin-top: 3rem;
+}
+
+/* .menuImage {
+  transform: translate(0, 1rem); 
+} */
+
+.navIconLabel {
+  transform: translate(0.4rem, 1rem); 
+}
+
+.menuItem:hover {
+  cursor: pointer; 
+  text-decoration: underline; 
 }
