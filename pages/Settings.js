@@ -45,7 +45,7 @@ export default function Settings() {
                 <img src="/images/sound.svg" alt="sound icon" className={styles.icon}/>
                   <div>
                     <h5>Sound</h5>
-                    <p>Adjust notifications and general audio</p>
+                    <p>Turn sound on</p>
                   </div>
                   <div className={styles.toggle2}>
                     <ToggleSwitch/>
@@ -68,7 +68,11 @@ export default function Settings() {
                     <p>Switch to a different sized font</p>
                   </div>
                   <form>
-                    <select className={styles.dropdown}></select>
+                    <select className={styles.dropdown}>
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                    </select>
                   </form>
                 </li>
                 <li className={styles.listItem}>
@@ -78,7 +82,11 @@ export default function Settings() {
                     <p>Switch to a different typeface</p>
                   </div>
                   <form>
-                    <select className={styles.dropdown2}></select>
+                    <select className={styles.dropdown2}>
+                      <option>Lexend</option>
+                      <option>Besley</option>
+                      <option>Comic Sans</option>
+                    </select>
                   </form>
                 </li>
                 <li className={styles.listItem}>
@@ -88,7 +96,12 @@ export default function Settings() {
                     <p>Switch to a different language</p>
                   </div>
                   <form>
-                    <select className={styles.dropdown3}></select>
+                    <select className={styles.dropdown3}>
+                      <option>English</option>
+                      <option>French</option>
+                      <option>Chinese</option>
+                      <option>Spanish</option>
+                    </select>
                   </form>
                 </li>
               </ul>

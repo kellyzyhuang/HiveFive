@@ -76,7 +76,7 @@ export default function Header({ title, backImage, link, exit }) {
             <Link href="/Home">
               <button className={`${styles.popUpButton} ${styles.leave}`}>Leave</button>
             </Link>
-            <button className={styles.popUpButton} onClick={togglePopup}>Stay</button>
+            <button className={styles.popUpButtonStay} onClick={togglePopup}>Stay</button>
           </div>
         </div>
       )}

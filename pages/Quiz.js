@@ -42,7 +42,7 @@ export default function Quiz() {
       setCurrentQuestionNumber(nextQuestionIndex);
     } else {
       setQuizComplete(true); 
-      updateCorrectAnswersTotal(correctAnswersTotal); // Update the context with the total correct answers
+      updateCorrectAnswersTotal(correctAnswersTotal); 
     }
   };
 
@@ -53,7 +53,7 @@ export default function Quiz() {
   };
 
   const toggleMicPopup = () => {
-    setMicPopupVisible(!micPopupVisible); // Renamed function
+    setMicPopupVisible(!micPopupVisible); 
   };
 
   if (quizComplete) {

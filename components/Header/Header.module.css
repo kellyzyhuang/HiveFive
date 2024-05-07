@@ -142,6 +142,29 @@
   font-size: 16px;
 }
 
+.popUpButtonStay {
+  height: 30px;
+  width: 107px;
+  border: none;
+  background-color: var(--accent-color);
+  border-radius: 30px;
+  margin: 0rem 1rem;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.popUpButtonStay:hover {
+  background-color: var(--secondary-color); 
+  border: 2px solid var(--accent-color); 
+  cursor: pointer;
+}
+
+.popUpButton:hover {
+  background-color: var(--white); 
+  border: 2px solid var(--accent-color); 
+  cursor: pointer;
+}
+
 .leave {
   background-color: var(--secondary-color);
 }
