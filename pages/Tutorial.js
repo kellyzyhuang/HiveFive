@@ -3,18 +3,24 @@ import styles from '@/styles/Tutorial.module.css';
 import Link from "next/link";
 import { landingPages } from '@/data/data';
 import React from 'react';
+import { useRouter } from 'next/router'; 
 
-export default function Tutorial(){
-
+export default function Tutorial() {
     const [pages, setPages] = useState([]);
     const [pageNow, setPageNow] = useState(0);
     const [progressIndicator, setProgressIndicator] = useState(null);
     const [navBarExamples, setNavBarExamples] = useState(null);
 
+    const router = useRouter(); 
+
     const nextPage = () => {
-        setPageNow(pageNow + 1);
-    }
-    
+        if (pageNow >= pages.length - 1) {
+            router.push('/Home'); 
+        } else {
+            setPageNow(pageNow + 1); 
+        }
+    };
+
     useEffect(() => {
         setPages(landingPages.tutorials);
     }, []);
@@ -24,12 +30,12 @@ export default function Tutorial(){
         setNavBarExamples(pages[pageNow]);
     }, [pageNow, pages]);
 
-    return(
+    return (
         <>
         <main className={`${styles.main}`}>
             <div className={styles.Landing}>
                 <div className={styles.skip}>
-                <Link href="/Home"> <button className={styles.skipButton}>Skip</button></Link>{/* will have to change the index page to tutorial */}
+                    <Link href="/Home"> <button className={styles.skipButton}>Skip</button></Link>
                 </div>
                 <div className={styles.heading}>
                     <h1>HiveFive</h1>
@@ -38,20 +44,20 @@ export default function Tutorial(){
                 <div className={styles.navbarExamples}>
                 {navBarExamples && (
                         <div>
-                            <img src={navBarExamples.navbar} alt={navBarExamples.alt2} width={410} height={200}/>
+                            <img src={navBarExamples.navbar} alt={navBarExamples.alt2} width={410} height={200} className={styles.navbarContent}/>
                         </div>
                     )}
                 </div>
                 <img className={styles.leftCloud} src="/images/left_cloud.svg" alt="left cloud" width={200} height={100}/>
                 <img className={styles.rightCloud} src="/images/right_cloud.svg" alt="right cloud" width={200} height={100}/>
-                <div className={styles.dialouge}>
+                <div className={styles.dialogue}>
                     <p>{pages[pageNow]?.description}</p>
                 </div>
                     <img className={styles.happyBee} src="/images/happy_bee.svg" alt="happy bee mascot" width={250} height={200}/>
                 <div className={styles.progIndicator}>
                     {progressIndicator && (
                         <div>
-                            <img   src={progressIndicator.image} alt={progressIndicator.alt} width={100} height={50}/>
+                            <img src={progressIndicator.image} alt={progressIndicator.alt} width={100} height={50}/>
                         </div>
                     )}
                 </div>

@@ -21,6 +21,11 @@
     font-family: var(--font-family);
 }
 
+.skipButton:hover{
+    cursor: pointer; 
+    text-decoration: underline; 
+}
+
 .skipButton a{
     text-decoration: none;
     color: var(--text-black);
@@ -42,16 +47,19 @@
 }
 
 .leftCloud{
-    transform: translate(17rem);
+    transform: translate(17rem, 3.5rem);
+    position: relative; 
+    z-index: 0; 
 }
 
 .rightCloud{
-    transform: translate(-17rem);
+    transform: translate(-17rem, -0.5rem);
     margin-bottom: -15rem;
     z-index: 0;
+    position: relative; 
 }
 
-.dialouge{
+.dialogue{
     z-index: 1;
     font-size: 1.375rem;
     background-color: var(--secondary-color);
@@ -73,7 +81,7 @@
     display: flex;
     float: right;
     background-color: var(--accent-color);
-    border: none;
+    border: 2px solid var(--accent-color);
     border-radius: 2rem;
     padding: 0.8rem;
     width: 10rem;
@@ -83,6 +91,13 @@
     margin-top: 4rem;
     text-align: center;
     justify-content: center;
+    transition: 0.3s;
+}
+
+.continueButton:hover{
+    background-color: var(--secondary-color); 
+    border: 2px solid var(--accent-color); 
+    cursor: pointer; 
 }
 
 .progIndicator{
@@ -98,6 +113,10 @@
 .navbarExamples{
     margin-left: 0.8rem;
     margin-bottom: -8rem;
-    margin-top: -3rem;
-    z-index: 1; 
+    margin-top: -3rem; 
+}
+
+.navbarContent{
+    z-index: 2; 
+    position: relative; 
 }

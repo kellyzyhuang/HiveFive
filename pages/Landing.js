@@ -16,7 +16,7 @@ export default function Landing(){
                 <h3>Help save the bees.</h3>
             </div>
             <Images className={styles.grassImg} src={"/images/grass_bottom.svg"} width={430} height={300}/>
-            <button className={styles.startButton}><Link className={styles.startLink} href="/Tutorial">Start Buzzin'</Link></button>
+            <button className={styles.startButton}><link className={styles.link} href="/Tutorial">Start Buzzin'</link></button>
         </div>
     )
 }
