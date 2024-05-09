@@ -51,18 +51,19 @@ export default function Learn() {
                         <button className={styles.chip}>Plants</button>
                         <button className={styles.chip}>Projects</button>
                     </div>
-                    <div className={styles.articles}>
-                        <div className={styles.buffer}></div>
-                        <div className={styles.articleContainer}>
-                        {data.map((article, index) => (
-                            <div key={index} className={styles.article}>
-                                <div className={styles.overlay}></div>
-                                <img src="/images/bee-image.jpg" className={styles.coverPhoto} alt="Cover"></img>
-                                <div className={styles.date}>{formatDate(article.publishedAt)}</div>
-                                <div className={styles.title}><p>{article.title}</p></div>
-                            </div>
-                        ))}
+                    <div className={styles.articleContainer}>
+                        <div className={styles.article}>
+                            <img src="/images/bee-image.jpg" className={styles.coverPhoto} alt="Cover"></img>   
                         </div>
+                        {data.map((article, index) => (
+                        <div key={index} className={styles.infoContainer}>
+                                <div className={styles.title}><p>{article.title}</p></div>
+                                <div className={styles.date}>{formatDate(article.publishedAt)}</div>
+                        </div>
+                        ))}
+                        <Link href="/Learn">
+                            <Image src="/images/black_arrow.svg" alt="black next arrow" width={50} height={50} className={styles.blackArrow}/>
+                        </Link>
                     </div>
                 </div>
                 <NavBar className={styles.nav}/>

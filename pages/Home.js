@@ -67,7 +67,7 @@
                 <Image src="/images/happy_bee.svg" width={150} height={150} alt="beenard" className={styles.beenardAdventure}/>
                 <button className={styles.adventureButton}>
                   <Link className={styles.adventureLink} href="/Game">Play Now</Link>
-                </button>
+                </button>   
             </div>
             <div className={styles.buffer}></div>
               <NavBar className={styles.nav}/>
