@@ -1,16 +1,69 @@
 .main {
-    display: flex;
-    justify-content: center;
-    background-color: var(--black-text);
-    min-height: 100vh;
-    margin: -10px;
-  }
-  
-  .screen {
-    width: 429px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: var(--cream);
-  }
+  display: flex;
+  justify-content: center;
+  background-color: var(--black-text);
+  min-height: 140vh;
+  margin: -10px;
+  font-family: "Lexend", sans-serif; 
+}
+
+.screen {
+  width: 430px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--cream);
+}
+
+.ara{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.araDesc{
+  background-color: var(--pink);
+  border-radius: 40px;
+  line-height: 2px;
+  width: 12.813rem;
+  padding: 3px;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.kelly, .melissa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.kellyDesc{
+  background-color: var(--teal);
+  border-radius: 40px;
+  line-height: 2px;
+  width: 12.813rem;
+  padding: 3px;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.melissaDesc{
+  background-color: var(--green);
+  border-radius: 40px;
+  line-height: 2px;
+  width: 12.813rem;
+  padding: 3px;
+  text-align: left;
+  padding-left: 1.5rem;
+  margin-bottom: 7rem;
+}
+
+.araDesc h3, .kellyDesc h3, .melissaDesc h3{
+  font-size: 1.375rem;
+  font-weight: 400;
+}
