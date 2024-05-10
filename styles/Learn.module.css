@@ -25,8 +25,8 @@
   transform: translate(0, 3rem);
   width: 310px;
   display: flex;
-  margin: 1rem auto;
-
+  margin: 12rem auto;
+  flex-wrap: wrap;
 }
 
 .article {
