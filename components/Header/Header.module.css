@@ -154,7 +154,7 @@
 }
 
 .popUpButtonStay:hover {
-  background-color: var(--secondary-color); 
+  background-color: var(--white); 
   border: 2px solid var(--accent-color); 
   cursor: pointer;
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { quiz } from '../data/inventory.js';
 import Header from "@/components/Header/index.js";
 import styles from "@/styles/Quiz.module.css";
@@ -16,6 +16,24 @@ export default function Quiz() {
   const currentQuestion = quiz.questions[currentQuestionNumber];
   const { updateCorrectAnswersTotal } = useCorrectAnswers();
   const [micPopupVisible, setMicPopupVisible] = useState(false);
+  
+  const speak = (text) => {
+    const synth = window.speechSynthesis;
+    if (synth) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      synth.speak(utterance);
+    }
+  };
+
+  const handleSpeakerClick = () => {
+    speak(currentQuestion.question);
+  };
+
+  const handleSpeakerKeyDown = (event) => {
+    if (event.key === "Enter") {
+      speak(currentQuestion.question);
+    }
+  };
 
   const displayAnswer = (option) => {
     const isCorrect = option == currentQuestion.answer;
@@ -74,7 +92,14 @@ export default function Quiz() {
         </div>
         <div className={styles.questionHead}>
           <h1 className={styles.question}>{currentQuestion.question}</h1>
-          <img className={styles.speaker} src={"/images/speaker_icon.svg"} width={1} height={1}/> 
+          <img
+            className={styles.speaker}
+            src={"/images/speaker_icon.svg"}
+            alt="speaker icon"
+            onClick={handleSpeakerClick}
+            tabIndex={0}
+            onKeyDown={handleSpeakerKeyDown}
+          />
         </div>
         <div className={styles.imageContainer}>
           <img className={styles.gameBanner} src={currentQuestion.image}/> 
@@ -99,8 +124,8 @@ export default function Quiz() {
             onNextQuestion={nextQuestion}
           />
         )}
-        <button className={styles.microphone}  onClick={toggleMicPopup}>
-          <img className={styles.microphoneIcon} src={"/images/mic_icon.svg"} width={1} height={1}></img> 
+        <button className={styles.microphone} onClick={toggleMicPopup}>
+          <img className={styles.microphoneIcon} src={"/images/mic_icon.svg"}></img> 
         </button>
         {micPopupVisible && (
           <div className={`${styles.overlay}`}>

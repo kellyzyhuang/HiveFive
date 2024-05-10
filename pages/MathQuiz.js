@@ -17,6 +17,24 @@ export default function Quiz() {
   const { updateCorrectAnswersTotal } = useCorrectAnswers();
   const [micPopupVisible, setMicPopupVisible] = useState(false);
 
+  const speak = (text) => {
+    const synth = window.speechSynthesis;
+    if (synth) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      synth.speak(utterance);
+    }
+  };
+
+  const handleSpeakerClick = () => {
+    speak(currentQuestion.question);
+  };
+
+  const handleSpeakerKeyDown = (event) => {
+    if (event.key === "Enter") {
+      speak(currentQuestion.question);
+    }
+  };
+
   const displayAnswer = (option) => {
     const isCorrect = option == currentQuestion.answer;
     setIsCorrectAnswer(isCorrect);
@@ -35,13 +53,13 @@ export default function Quiz() {
   };
 
   const nextQuestion = () => {
-    setPopup(false); 
+    setPopup(false);
     const nextQuestionIndex = currentQuestionNumber + 1;
     
     if (nextQuestionIndex < mathquiz.questions.length) {
       setCurrentQuestionNumber(nextQuestionIndex);
     } else {
-      setQuizComplete(true); 
+      setQuizComplete(true);
       updateCorrectAnswersTotal(correctAnswersTotal);
     }
   };
@@ -53,7 +71,7 @@ export default function Quiz() {
   };
 
   const toggleMicPopup = () => {
-    setMicPopupVisible(!micPopupVisible); 
+    setMicPopupVisible(!micPopupVisible);
   };
 
   if (quizComplete) {
@@ -62,7 +80,7 @@ export default function Quiz() {
              questionCount={mathquiz.questions.length}
              onRestart={restartQuiz}
             />;
-  }; 
+  }
 
   return (
     <>
@@ -74,7 +92,14 @@ export default function Quiz() {
         </div>
         <div className={styles.questionHead}>
           <h1 className={styles.question}>{currentQuestion.question}</h1>
-          <img className={styles.speaker} src={"/images/speaker_icon.svg"} width={1} height={1}/> 
+          <img 
+            className={styles.speaker} 
+            src={"/images/speaker_icon.svg"} 
+            alt="Speak" 
+            onClick={handleSpeakerClick} 
+            tabIndex={0}
+            onKeyDown={handleSpeakerKeyDown}
+          />
         </div>
         <div className={styles.imageContainer}>
           <img className={styles.gameBanner} src={currentQuestion.image}/> 
@@ -99,8 +124,8 @@ export default function Quiz() {
             onNextQuestion={nextQuestion}
           />
         )}
-        <button className={styles.microphone}  onClick={toggleMicPopup}>
-          <img className={styles.microphoneIcon} src={"/images/mic_icon.svg"} width={1} height={1}></img> 
+        <button className={styles.microphone} onClick={toggleMicPopup}>
+          <img className={styles.microphoneIcon} src={"/images/mic_icon.svg"} alt="Mic"/>
         </button>
         {micPopupVisible && (
           <div className={`${styles.overlay}`}>
