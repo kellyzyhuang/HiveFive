@@ -1,0 +1,54 @@
+.formOuterContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fieldSet{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    max-width: 400px;
+}
+
+.label{
+    font-size: 1.375rem;
+    font-family: "Lexend", sans-serif;
+    margin-left: 1rem;
+}
+
+.label span{
+    color: var(--incorrect)
+}
+
+.nameInput, .userNameInput, .emailInput, .phoneNumberInput, .passwordInput{
+    border: 2px solid var(--accent-color);
+    border-radius: 30px;
+    width: 14.375rem;
+    height: 1.875rem;
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 5px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    color: var(--grey);
+    background-color: var(--cream);
+}
+
+.nameInput:focus, .userNameInput:focus, .emailInput:focus, .phoneNumberInput:focus, .passwordInput:focus{
+    border: 2px solid var(--pink);
+}
