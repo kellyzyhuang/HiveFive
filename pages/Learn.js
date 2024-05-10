@@ -4,6 +4,7 @@ import NavBar from '@/components/NavBar';
 import styles from '@/styles/Learn.module.css';
 import Head from "next/head";
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Learn() {
     const [data, setData] = useState([]); 
