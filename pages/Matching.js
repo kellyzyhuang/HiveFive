@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Matching(){
     return(
         <main className={`${styles.main}`}>
-            <Header title="Matching" backImage="/images/back.svg" link="/"/>
+            <Header title="Matching" backImage="/images/back.svg" link="/LearnMore"/>
             <div className={styles.screen}>
                 <div className={styles.heading}>
                     <h4>Select your category</h4>
