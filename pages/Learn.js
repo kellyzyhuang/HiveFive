@@ -39,7 +39,7 @@ export default function Learn() {
     return (
         <>
             <main className={`${styles.main}`}>
-                <Header title="Learn" backImage="/images/back.svg" link="/LearnMore" />
+                <Header title="Learn" backImage="/images/back.svg" link="/" />
                 <div className={styles.screen}>
                     <div className={styles.search}>
                         <img src="/images/search_icon.svg" alt="search icon" className={styles.searchIcon}/>
