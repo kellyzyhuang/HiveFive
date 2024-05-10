@@ -7,7 +7,7 @@ export default function Team(){
     return(
         <>
             <main className={`${styles.main}`}>
-                <Header title="Team" backImage="/images/back.svg" link="/"/>
+                <Header title="Team" backImage="/images/back.svg" link="/LearnMore"/>
                 <div className={styles.screen}>
                     <div className={styles.ara}>
                         <Image src="/images/bee_three.svg" alt="bee with glasses" width={120} height={120}/>
