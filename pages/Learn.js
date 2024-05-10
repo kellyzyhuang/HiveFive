@@ -52,6 +52,7 @@ export default function Learn() {
                         <button className={styles.chip}>Plants</button>
                         <button className={styles.chip}>Projects</button>
                     </div>
+                    <div className={styles.buffer}></div>
                     {data.map((article, index) => (
                     <div className={styles.articleContainer}>
                         <div className={styles.article}>
