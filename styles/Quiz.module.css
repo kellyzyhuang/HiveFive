@@ -86,6 +86,7 @@
   border-radius: 50%;
   border: none;
   box-shadow: 0.1rem 0.4rem 0.1rem var(--shadow);
+  transition: 0.3s; 
 }
 
 .microphoneIcon {
@@ -96,6 +97,7 @@
 
 .microphone:hover {
   cursor: pointer;
+  background-color: var(--secondary-color); 
 }
 
 .exitIcon {
