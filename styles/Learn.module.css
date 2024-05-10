@@ -23,9 +23,10 @@
 
 .articleContainer {
   transform: translate(0, 3rem);
-  position: absolute; 
   width: 310px;
   display: flex;
+  margin: 1rem auto;
+
 }
 
 .article {
@@ -132,7 +133,6 @@
   font-weight: 300; 
 }
 
-/* article temp styling */
 
 
 
