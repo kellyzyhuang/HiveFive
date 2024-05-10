@@ -16,7 +16,7 @@
 }
 
 .buffer{
-  height: 8rem;
+  height: 12rem;
   width: 100%;
 }
 
@@ -27,6 +27,9 @@
   display: flex;
   margin: 1rem auto;
   flex-wrap: wrap;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  height: 171px;
 }
 
 .article {
