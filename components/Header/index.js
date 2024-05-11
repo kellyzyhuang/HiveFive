@@ -6,6 +6,7 @@ import { useCorrectAnswers } from '../../CorrectAnswersContext';
 
 export default function Header({ title, backImage, link, exit }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuHovered, setIsMenuHovered] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const { correctAnswersTotal } = useCorrectAnswers();
   
@@ -26,7 +27,6 @@ export default function Header({ title, backImage, link, exit }) {
               <Image src="/images/Gem.svg"  width={30} height={30} alt="Gem icon" className={styles.gemIcon}/>
               <span className={styles.counter}>{correctAnswersTotal}</span>
             </div>
-            
           )}
           {exit ? (
             <button 
@@ -51,8 +51,19 @@ export default function Header({ title, backImage, link, exit }) {
           <h1 className={styles.pageTitle}>{title}</h1>
         </li>
         <li className={styles.listItem}>
-          <button className={styles.navIcon} onClick={toggleMenu}>
-            <Image src="/images/Hamburger.svg" width={40} height={40} alt="Hamburger icon" className={styles.menuImage}/>
+          <button 
+            className={styles.navIcon} 
+            onClick={toggleMenu} 
+            onMouseEnter={() => setIsMenuHovered(true)}
+            onMouseLeave={() => setIsMenuHovered(false)}
+          >
+            <Image 
+              src={isMenuHovered ? "/images/Hamburger.svg" : "/images/hamburger_plain.svg"} 
+              width={40} 
+              height={40} 
+              alt="Hamburger icon" 
+              className={styles.menuImage}
+            />
           </button>
           {/* <p className={styles.navIconLabel}>Menu</p> */}
         </li>
