@@ -71,7 +71,7 @@ export default function Header({ title, backImage, link, exit }) {
       {isMenuOpen && (
         <div className={styles.overlay}>
           <div className={styles.menu}>
-            <Image className={styles.exit} onClick={toggleMenu} src="/images/x.svg" width={30} height={30} alt="x icon"/>
+            <Image className={styles.exit} onClick={toggleMenu} src="/images/x.svg" width={20} height={20} alt="x icon"/>
             <Link href="/Profile" className={styles.menuItem}><Image className={styles.hamIcon} src="/images/profile.svg" width={30} height={30} alt="profile icon"/>Profile</Link>
             <Link href="/Settings" className={styles.menuItem}><Image className={styles.hamIcon} src="/images/Settings.svg" width={30} height={30} alt="settings icon"/>Settings</Link>
             <Link href="/GameRules" className={styles.menuItem}><Image className={styles.hamIcon} src="/images/bee-icon.svg" width={30} height={30} alt="bee icon"/>Mini Adventure</Link>
