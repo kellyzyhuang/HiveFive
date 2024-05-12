@@ -31,7 +31,11 @@ export default function Matching(){
                     <div className={styles.textBtnSpecies}>
                         <h3>Species</h3>
                         <p>Help Identify the Bees!</p>
-                        <button><Image src="/images/next_arrow_teal.svg" alt="teal next arrow" width={50} height={50}/></button>
+                        <button>
+                            <Link href="/Species">
+                                <Image src="/images/next_arrow_teal.svg" alt="teal next arrow" width={50} height={50}/>
+                            </Link>
+                        </button>
                     </div>
                 </div>
                 <NavBar/>
