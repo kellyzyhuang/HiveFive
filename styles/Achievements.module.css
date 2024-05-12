@@ -54,7 +54,7 @@
   }
 
   .rewardsItem {
-    background-color: var(--secondary-color);
+    background-color: var(--light-teal);
     border-radius: 30px;
     width: 191px;
     height: 220px;
@@ -76,7 +76,7 @@
     width: 115px;
     height: 30px;
     border-radius: 30px;
-    background-color: var(--accent-color);
+    background-color: var(--teal);
     font-size: 20px;
     font-weight: bold;
     border: none;
