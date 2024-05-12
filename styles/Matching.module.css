@@ -91,3 +91,12 @@
     border: none;
     transform: translate(5.5rem, -0.1rem);
 }
+
+.button:hover{
+    width: 55px; 
+    height: 55px; 
+}
+
+.button{
+    transition: 0.3s ease-in-out;
+}

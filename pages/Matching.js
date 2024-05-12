@@ -21,7 +21,7 @@ export default function Matching(){
                         <p>Explore the Plant Matches for Bees!</p>
                         <button>
                             <Link href="/Plants">
-                                <Image src="/images/next_arrow_teal.svg" alt="teal next arrow" width={50} height={50}/>
+                                <Image className={styles.button} src="/images/next_arrow_teal.svg" alt="teal next arrow" width={50} height={50}/>
                             </Link>
                         </button>
                     </div>
@@ -33,7 +33,7 @@ export default function Matching(){
                         <p>Help Identify the Bees!</p>
                         <button>
                             <Link href="/Species">
-                                <Image src="/images/next_arrow_teal.svg" alt="teal next arrow" width={50} height={50}/>
+                                <Image className={styles.button} src="/images/next_arrow_teal.svg" alt="teal next arrow" width={50} height={50}/>
                             </Link>
                         </button>
                     </div>

@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--black-text);
+    background-color: var(--cream);
     min-height: 100vh;
     margin: -10px;
     font-family: "Lexend", sans-serif; 
@@ -88,4 +88,9 @@
     background-color: var(--cream);
     border: 2px solid var(--secondary-color);
     transition: 0.5s;
+}
+
+.endangered a, .tryAgain a{
+    text-decoration: none;
+    color: var(--black);
 }
