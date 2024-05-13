@@ -24,8 +24,8 @@ export default function Settings() {
                 <img src="/images/profilepicture.jpg" alt="profile picture"/>
               </div>
               <div className={styles.profileDetails}>
-                <h3>Jane</h3>
-                <p>Edit profile</p>
+                <h3>Anika</h3>
+                <button><Link href="/Profile">Edit Profile</Link></button>
               </div>
             </section>
             <section className={styles.settingOptions}>

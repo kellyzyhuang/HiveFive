@@ -1,7 +1,6 @@
 .main {
     display: flex;
     justify-content: center;
-    background-color: var(--black-text);
     min-height: 100vh;
     margin: -10px;
     font-family: "Lexend", sans-serif;
@@ -14,12 +13,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 10rem;
 }
 
 .heading{
     text-align: center;
     line-height: 5px;
+    margin-top: 10rem;
 }
 
 .heading h4{
@@ -30,7 +29,6 @@
 .heading p{
     font-weight: 300;
     margin-top: -8px;
-    margin-bottom: 3rem;
 }
 
 .plantImages img{

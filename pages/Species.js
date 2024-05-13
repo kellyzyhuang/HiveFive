@@ -9,8 +9,8 @@ export default function Species() {
   const [selectedSpecies, setSelectedSpecies] = useState(null);
   const [matchingComplete, setMatchingComplete] = useState(false);
 
-  const clickImage = (specieName) => {
-    setSelectedSpecies(specieName);
+  const clickImage = (speciesName) => {
+    setSelectedSpecies(speciesName);
     setMatchingComplete(true);
   };
 
@@ -31,19 +31,21 @@ export default function Species() {
             <h4>Endangered Species</h4>
             <p>Select the Western Bumblebee.</p>
           </div>
-          <div className={styles.speciesImages}>
-            {firstHalf.map((answers) => (
-              <div key={answers.name} onClick={() => clickImage(answers.name)}>
-                <Image src={answers.image} alt={answers.alt} width={166} height={160} />
-              </div>
-            ))}
-          </div>
-          <div className={styles.speciesImages}>
-            {secondHalf.map((answers) => (
-              <div key={answers.name} onClick={() => clickImage(answers.name)}>
-                <Image src={answers.image} alt={answers.alt} width={166} height={160} />
-              </div>
-            ))}
+          <div className={styles.images}>
+            <div className={styles.speciesImages}>
+              {firstHalf.map((answers) => (
+                <div key={answers.name} onClick={() => clickImage(answers.name)}>
+                  <Image src={answers.image} alt={answers.alt} width={166} height={160} />
+                </div>
+              ))}
+            </div>
+            <div className={styles.speciesImages}>
+              {secondHalf.map((answers) => (
+                <div key={answers.name} onClick={() => clickImage(answers.name)}>
+                  <Image src={answers.image} alt={answers.alt} width={166} height={160} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </main>
