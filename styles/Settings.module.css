@@ -112,3 +112,16 @@
   transform: translate(4.3rem, 2rem);
   border: 2px solid var(--pink); 
 }
+
+.profileDetails button{
+  background-color: inherit;
+  border: none;
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+  transform: translate(-0.5rem, -1rem);
+}
+
+.profileDetails a{
+  text-decoration: none;
+  color: var(--black);
+}
