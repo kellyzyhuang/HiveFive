@@ -34,18 +34,19 @@
     animation: beenard 3s infinite ease-in-out; 
 }
 
-@keyframes beenard 
-{
-  0% {
-    transform: translate(0,0); 
-  }
-  50% {
-    transform: translate(0, 1rem); 
-  }
-  100% {
-    transform: translate(0,0); 
-  }
-
+@keyframes beenard {
+    0% {
+        transform: scale(0.25) rotate(360deg);
+    }
+    25% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1) translate(0, 1rem);
+    }
+    100% {
+        transform: scale(1) translate(0, 0); 
+    }
 }
 
 .grassImg{
@@ -59,6 +60,7 @@
 
 .text h1{
     font-size: 3rem;
+    cursor: pointer;
 }
 
 .startButton{
