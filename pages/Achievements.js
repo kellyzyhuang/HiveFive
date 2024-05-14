@@ -60,7 +60,7 @@ export default function Achievements(){
                     
                 ) : (
                     <div className={styles.rewardsContent}>
-                        <Awards itemName="Novice Beekeeper" requirements="Completed" image="/images/award.png"/>
+                        <Awards itemName="Novice Beekeeper" requirements="Completed" image="/images/Award.svg"/>
                         <Awards itemName="Junior Beekeeper" requirements="Complete 20 Quizzes" image="/images/green-lock.svg"/>
                         <Awards itemName="Senior Beekeeper" requirements="Complete 50 Quizzes" image="/images/green-lock.svg"/>
                         <Awards itemName="Master Beekeeper" requirements="Complete 100 Quizzes" image="/images/green-lock.svg"/>
