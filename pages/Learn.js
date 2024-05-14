@@ -33,7 +33,11 @@ export default function Learn() {
 
     const formatDate = (dateString) => {
         const date = new Date(dateString);
-        return `${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`;
+        return date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
     };
 
     return (
@@ -53,22 +57,29 @@ export default function Learn() {
                         <button className={styles.chip}>Projects</button>
                     </div>
                     <div className={styles.buffer}></div>
-                    {data.map((article, index) => (
-                    <div className={styles.articleContainer}>
-                        <div className={styles.article}>
-                            <img src="/images/bee-image.jpg" className={styles.coverPhoto} alt="Cover"></img>   
+                    <div className={styles.articles}>
+                        {data.map((article, index) => (
+                        <div className={styles.articleContainer}>
+                            <div className={styles.article}>
+                                <img src={article.image || '/images/bee-image.jpg'} 
+                                onError={(e) => {
+                                    if (!e.target.src.endsWith('/images/bee-image.jpg')) {
+                                        e.target.src = '/images/bee-image.jpg';
+                                    }
+                                }}
+                                className={styles.coverPhoto} 
+                                alt="Cover"/> 
+                            </div>
+                            <div key={index} className={styles.infoContainer}>
+                                    <div className={styles.title}><p>{article.title}</p></div>
+                                    <div className={styles.date}>{formatDate(article.publishedAt)}</div>
+                            </div>
+                            <Link href={article.url} target='_blank'>
+                                <Image src="/images/black_arrow.svg" alt="black next arrow" width={50} height={50} className={styles.blackArrow}/>
+                            </Link>
                         </div>
-                        
-                        <div key={index} className={styles.infoContainer}>
-                                <div className={styles.title}><p>{article.title}</p></div>
-                                <div className={styles.date}>{formatDate(article.publishedAt)}</div>
-                        </div>
-                        
-                        <Link href="/Learn">
-                            <Image src="/images/black_arrow.svg" alt="black next arrow" width={50} height={50} className={styles.blackArrow}/>
-                        </Link>
-                    </div>
-                ))}
+                         ))}
+                </div>
                 </div>
                 <NavBar className={styles.nav}/>
             </main>

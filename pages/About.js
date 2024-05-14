@@ -36,7 +36,7 @@ export default function About() {
                   simplified the process here. On top of 
                   contributions made by our users, the team 
                   at HiveFive will also be donating a portion
-                  of our proceeds to the help conserve the 
+                  of our proceeds to help conserve the 
                   environment we live in!</p>
             </div>
           </section>
