@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color: var(--black-text);
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -12,7 +11,7 @@
   
   .screen {
     width: 430px;
-    height: 100%;
+    height: 1800px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -24,6 +23,15 @@
   .buffer {
     display: none;
     height: 5rem;
+  }
+
+  .rules {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 33rem; 
+    padding-top: 16rem; 
+    padding-bottom: 10rem; 
   }
 
   .background {
@@ -40,9 +48,33 @@
     font-family: var(--font-family);
     font-size: 1.375rem;
     margin-top: 1rem; 
+    transition: 0.2s; 
+  }
+
+  .goButton:hover {
+    cursor: pointer; 
+    background-color: var(--white); 
   }
 
   .link {
     text-decoration: none;
     color: black;
+  }
+
+  .beenardSad {
+    margin-top: -2rem; 
+    animation: beenard 3s infinite ease-in-out; 
+  }
+  
+  @keyframes beenard 
+  {
+    0% {
+      transform: translate(0,0); 
+    }
+    50% {
+      transform: translate(0, 1rem); 
+    }
+    100% {
+      transform: translate(0,0); 
+    }
   }
