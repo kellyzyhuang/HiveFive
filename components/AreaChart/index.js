@@ -1,5 +1,5 @@
-import { Line } from 'react-chartjs-2'; 
-
+import { useEffect, useState } from 'react';
+import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -24,6 +24,26 @@ ChartJS.register(
 );
 
 export default function AreaChart() {
+  const [pointImage, setPointImage] = useState(null);
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = '/images/happy_bee.svg';
+    image.onload = () => {
+      setPointImage(image);
+    };
+  }, []);
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = '/images/happy_bee.svg';
+    image.onload = () => {
+      image.width = 15; 
+      image.height = 15; 
+      setPointImage(image);
+    };
+  }, []);
+
   const data = {
     labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
     datasets: [
@@ -31,8 +51,10 @@ export default function AreaChart() {
         label: 'Total Hours Spent',
         data: [2, 3, 5, 2, 1, 4, 5],
         fill: true,
-        backgroundColor: 'rgba(255,201,61,0.2)',
-        borderColor: 'rgba(255,201,61,1)'
+        backgroundColor: 'rgba(135, 175, 27,0.2)',
+        borderColor: 'rgba(135, 175, 27,1)',
+        pointStyle: pointImage, 
+        pointRadius: 10
       }
     ]
   };
@@ -43,12 +65,18 @@ export default function AreaChart() {
         beginAtZero: true
       }
     },
-    maintainAspectRatio: false
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        display: true
+      }
+    }
   };
 
   return (
     <div style={{ height: '20vh', width: '27vw' }}>
-      <Line data={data} options={options} />
+      {pointImage && <Line data={data} options={options} />}
     </div>
   );
 }
+
