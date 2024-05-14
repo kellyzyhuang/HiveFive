@@ -10,7 +10,7 @@ export default function Rewards() {
   return(
     <>
         <div className={styles.rewardsItem}>
-            <Images src="/images/locked.svg" width={114} height={150} alt="locked" className={styles.lockedImg}/>
+            <Images src="/images/locked.svg" width={80} height={115} alt="locked" className={styles.lockedImg}/>
         </div>
     </>
   )

@@ -30,7 +30,7 @@ export const landingPages = {
         {
             id: 4,
             title: "Tutorial",
-            description: "Each question you answer correctly earns you 5 points = 5 cents! ",
+            description: "Each question you answer correctly earns you 1 point = 5 cents! ",
             image: "/images/prog-indicator3.svg",
             navbar: "/images/navbar3.svg",
             alt: "progess indicator for page 4",
@@ -39,7 +39,7 @@ export const landingPages = {
         {
             id: 5,
             title: "Tutorial",
-            description: "Read about the latest bee news or learn more through our matching game!",
+            description: "Read about the latest bee news or learn more about bees through our matching game!",
             image: "/images/pro-indicator4.svg",
             navbar: "/images/navbar2.svg",
             alt: "progess indicator for page 5",
@@ -48,7 +48,7 @@ export const landingPages = {
         {
             id: 6,
             title: "Tutorial",
-            description: "Track your progress and see how much you have donated!",
+            description: "Track your in-app progress and see how much you have donated!",
             image: "/images/prog-indicator5.svg",
             navbar: "/images/navbar1.svg",
             alt: "progess indicator for page 6",
@@ -57,7 +57,7 @@ export const landingPages = {
         {
             id: 7,
             title: "Tutorial",
-            description: "Finally, check out your achievements and unlock rewards or relax with a mini adventure game!",
+            description: "Finally, relax with a mini adventure game or check out your achievements and unlock rewards!",
             image: "/images/prog-indicator6.svg",
             navbar: "/images/achievements.svg",
             alt: "progess indicator for page 7",

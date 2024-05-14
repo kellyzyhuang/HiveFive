@@ -138,6 +138,13 @@
   font-size: 16px;
 }
 
+.popUpButton:hover {
+  cursor: pointer;
+  background-color: var(--white); 
+  border: 2px solid var(--accent-color); 
+}
+
+
 .leave {
   background-color: var(--secondary-color);
 }

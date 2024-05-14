@@ -34,6 +34,9 @@ export default function Achievements(){
                 <Header title="Achievements" backImage="/images/back.svg" link="/"/>
                 <NavBar className={styles.nav}/>
                 <div className={styles.buffer}></div>
+                <div className={styles.description}>
+                    <h4>Complete tasks to earn achievements and unlock rewards to give Beenard a new look!</h4>
+                </div>
                 <div className={styles.buttons}>
                     <button onClick={() => toggleContent('achievements')} className={styles.achievements} style={{ backgroundColor: achievementsActive ? 'var(--green)' : 'var(--light-green)' }}>Achievements</button>
                     <button onClick={() => toggleContent('rewards')} className={styles.rewards} style={{ backgroundColor: rewardsActive ? 'var(--teal)' : 'var(--light-teal)' }}>Rewards</button>
@@ -42,7 +45,7 @@ export default function Achievements(){
                     <div className={styles.rewardsContent}>
                         <div className={styles.rewardsItem}>
                             <h3 className={styles.itemName}>Mr. Beenard III</h3>
-                            <Images src="/images/beenardIII.png" width={100} height={100} alt="beenard the third" className={styles.lockedImg}/>
+                            <Images src="/images/beenardIII.png" width={110} height={100} alt="beenard the third" className={styles.lockedImg}/>
                             <button className={styles.applyButton} onClick={toggleApplyText}>{applyText}</button>
                         </div>
                         <Rewards/>

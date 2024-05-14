@@ -11,7 +11,7 @@ export default function Awards( {itemName, requirements, image} ) {
     <>
         <div className={styles.rewardsItem}>
             <h3 className={styles.itemName}>{ itemName }</h3>
-            <Images src={image} width={100} height={135} alt="locked" className={styles.lockedImg}/>
+            <Images src={image} width={80} height={115} alt="locked" className={styles.lockedImg}/>
             <p>{requirements}</p>
         </div>
     </>
