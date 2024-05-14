@@ -80,6 +80,7 @@
   font-weight: 300; 
   color: var(--grey); 
   margin-top: -1.5rem; 
+  white-space: normal; 
 }
 
 .toggle {
