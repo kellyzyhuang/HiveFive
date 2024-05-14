@@ -13,6 +13,7 @@ export default function Settings() {
   const [isKeyboardTabbingEnabled, setKeyboardTabbingEnabled] = useState(false);
   const [isDarkModeEnabled, setDarkModeEnabled] = useState(false);
   const audioRef = useRef(null);
+  const [fontFamily, setFontFamily] = useState('Lexend');
 
   const handleKeyboardTabbingToggle = () => {
     setKeyboardTabbingEnabled(!isKeyboardTabbingEnabled);
@@ -45,8 +46,9 @@ export default function Settings() {
         <meta name="description" content="Save the bees one question at a time" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Besley&display=swap" rel="stylesheet"/>
     </Head>
-    <main className={styles.main}>
+    <main className={styles.main} style={{ fontFamily: fontFamily }}>
         <div className={styles.screen}>
         <Header title="Settings" backImage="/images/back.svg" link="/" />
           <div className={styles.buffer}></div>
@@ -123,10 +125,14 @@ export default function Settings() {
                     <p>Switch to a different typeface</p>
                   </div>
                   <form>
-                    <select className={styles.dropdown2}>
-                      <option>Lexend</option>
-                      <option>Besley</option>
-                      <option>Comic Sans</option>
+                    <select
+                      className={styles.dropdown2}
+                      value={fontFamily}
+                      onChange={(e) => setFontFamily(e.target.value)}
+                    >
+                      <option value="Lexend">Lexend</option>
+                      <option value="Besley">Besley</option>
+                      <option value="Comic Neue">Comic Neue</option>
                     </select>
                   </form>
                 </li>
