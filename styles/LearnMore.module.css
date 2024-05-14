@@ -113,7 +113,6 @@
 }
 
 .button:hover {
-    width: 55px; 
-    height: 55px; 
+    padding-left: 1rem; 
 }
 

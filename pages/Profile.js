@@ -15,6 +15,9 @@ export default function Profile(){
                         <h3>Hello, Anika!</h3>
                     </div>
                     <Form/>
+                    <div className={styles.buttonContainer}>
+                        <button className={styles.button}>Save</button>
+                    </div>
                 </div>
                 <NavBar/>
             </main>

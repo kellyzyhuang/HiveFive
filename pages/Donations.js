@@ -26,47 +26,47 @@ export default function Donations() {
                 <DoughnutChart/>
             </div>
             <div className={styles.circleTwo}><p>CAD ${(correctAnswersTotal * 5 / 100).toFixed(2)} Donated</p></div>
-            <button className={styles.impact}>View Your Impact</button>
+            <button className={styles.impact}><Link href ="/Learn" className={styles.link}>View Your Impact</Link></button>
             <div className={styles.summaryList}>
                 <p className={styles.summary}>Detailed Summary</p>
                 <hr className={styles.underline}></hr>
             </div>
             <div className={styles.list}>
                 <div className={styles.entry}>
-                    <p>Mar 01</p>
+                    <p>Jan 01</p>
                     <p>$3.50</p>
                 </div>
                 <div className={styles.entry}>
-                    <p>Mar 01</p>
-                    <p>$3.50</p>
+                    <p>Jan 05</p>
+                    <p>$2.50</p>
                 </div>
                 <div className={styles.entry}>
-                    <p>Mar 01</p>
-                    <p>$3.50</p>
+                    <p>Jan 06</p>
+                    <p>$4.50</p>
                 </div>
                 <div className={styles.entry}>
-                    <p>Mar 01</p>
-                    <p>$3.50</p>
+                    <p>Jan 15</p>
+                    <p>$1.00</p>
                 </div>
                 <div className={styles.entry}>
-                    <p>Mar 01</p>
-                    <p>$3.50</p>
+                    <p>Jan 21</p>
+                    <p>$1.55</p>
                 </div>
                 <div className={styles.entry}>
-                    <p>Mar 01</p>
-                    <p>$3.50</p>
+                    <p>Jan 24</p>
+                    <p>$0.20</p>
                 </div>
                 <div className={styles.entry}>
-                    <p>Mar 01</p>
-                    <p>$3.50</p>
+                    <p>Jan 27</p>
+                    <p>$3.00</p>
                 </div>
                 <div className={styles.entry}>
-                    <p>Mar 01</p>
-                    <p>$3.50</p>
+                    <p>Feb 01</p>
+                    <p>$5.05</p>
                 </div>
                 <div className={styles.entry}>
-                    <p>Mar 01</p>
-                    <p>$3.50</p>
+                    <p>Feb 03</p>
+                    <p>$1.15</p>
                 </div>
             </div>          
             <NavBar/>  

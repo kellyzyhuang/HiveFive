@@ -31,7 +31,7 @@
 .list {
   display: flex; 
   list-style-type: none; 
-  gap: 4rem; 
+  gap: 2.5rem; 
   margin-right: 2.8rem; 
 }
 

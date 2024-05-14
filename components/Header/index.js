@@ -65,7 +65,6 @@ export default function Header({ title, backImage, link, exit }) {
               className={styles.menuImage}
             />
           </button>
-          {/* <p className={styles.navIconLabel}>Menu</p> */}
         </li>
       </ul>
       {isMenuOpen && (

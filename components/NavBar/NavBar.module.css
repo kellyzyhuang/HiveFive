@@ -1,5 +1,5 @@
 .navBar{
-    background-color: var(--accent-color);
+    background-color: var(--header-navbar);
     color: var(--black-text);
     width: 430px;
     position: fixed;
@@ -16,6 +16,7 @@
     padding-right: 0.5rem; 
     padding-top: 0.5rem; 
     padding-bottom: 0.1rem; 
+    filter: var(--icon-filter);
 }
 
 .iconContainer {
@@ -35,10 +36,11 @@
    display: flex;
    justify-content: space-around;
    margin-left: -2rem;
+   list-style-type: none; 
 }
 
 .label{
-    color: black;
+    color: var(--black);
 }
 
 .activity a, .learnMore a, .quiz a, .home a{

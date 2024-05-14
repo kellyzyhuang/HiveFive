@@ -24,6 +24,8 @@
 .heading h4{
     font-size: 1.375rem;
     font-weight: 400;
+    margin-top: -1rem; 
+    margin-bottom: 3rem; 
 }
 
 .heading p{
@@ -35,8 +37,19 @@
     border-radius: 30px;
     object-fit: cover;
     padding: 13px;
+    cursor: pointer;
+}
+
+.speciesImages img:hover{
+    outline: 8px solid var(--accent-color);
+    outline-offset: -15px;
 }
 
 .images{
     display: flex;
+}
+
+
+.speciesImages {
+    margin-bottom: 3rem; 
 }

@@ -5,8 +5,39 @@ import Link from "next/link";
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import ToggleSwitch from "@/components/Toggle";
+import { useState, useEffect, useRef } from 'react';
 
 export default function Settings() {
+
+  const [isSoundOn, setSoundOn] = useState(false);
+  const [isKeyboardTabbingEnabled, setKeyboardTabbingEnabled] = useState(false);
+  const [isDarkModeEnabled, setDarkModeEnabled] = useState(false);
+  const audioRef = useRef(null);
+
+  const handleKeyboardTabbingToggle = () => {
+    setKeyboardTabbingEnabled(!isKeyboardTabbingEnabled);
+  };
+  
+  const handleDarkModeToggle = () => {
+    setDarkModeEnabled(!isDarkModeEnabled);
+  };
+
+  useEffect(() => {
+    if (isSoundOn) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+    }
+  }, [isSoundOn]);
+
+  useEffect(() => {
+    if (isDarkModeEnabled) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }, [isDarkModeEnabled]);
+
   return(
     <>
     <Head>
@@ -21,13 +52,14 @@ export default function Settings() {
           <div className={styles.buffer}></div>
             <section className={styles.userProfile}>
               <div className={styles.profileIcon}>
-                <img src="/images/profilepicture.jpg" alt="profile picture"/>
+                <img src="/images/profilepicture.jpg" alt="profile picture" className={styles.profilePicture}/>
               </div>
               <div className={styles.profileDetails}>
                 <h3>Anika</h3>
                 <button><Link href="/Profile">Edit Profile</Link></button>
               </div>
             </section>
+            <audio ref={audioRef} src="/music/Settings_BGM.mp3" loop />
             <section className={styles.settingOptions}>
               <h3>General</h3>
               <ul className={styles.list}>
@@ -38,7 +70,10 @@ export default function Settings() {
                     <p>Use your keyboard to navigate the app</p>
                   </div>
                   <div className={styles.toggle}>
-                    <ToggleSwitch/>
+                    <ToggleSwitch
+                    isEnabled={isKeyboardTabbingEnabled}
+                    onChange={handleKeyboardTabbingToggle}
+                    />
                   </div>
                 </li>
                 <li className={styles.listItem}>
@@ -48,7 +83,10 @@ export default function Settings() {
                     <p>Turn sound on</p>
                   </div>
                   <div className={styles.toggle2}>
-                    <ToggleSwitch/>
+                    <ToggleSwitch 
+                    isEnabled={isSoundOn} 
+                    onChange={() => setSoundOn(!isSoundOn)}
+                    />
                   </div>
                 </li>
                 <li className={styles.listItem}>
@@ -58,7 +96,10 @@ export default function Settings() {
                     <p>Switch to dark mode</p>
                   </div>
                   <div className={styles.toggle3}>
-                    <ToggleSwitch/>
+                    <ToggleSwitch
+                    isEnabled={isDarkModeEnabled}
+                    onChange={handleDarkModeToggle}
+                    />
                   </div>
                 </li>
                 <li className={styles.listItem}>

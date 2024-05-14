@@ -20,6 +20,7 @@
     display: flex;
     margin-top: 8rem;
     margin-bottom: 2rem;
+    margin-left: -2.5rem; 
 }
 
 .photoName h3{
@@ -29,3 +30,21 @@
     margin-left: -2.5rem;
 }
 
+.button {
+    width: 12rem; 
+    height: 2.5rem; 
+    position: absolute; 
+    transform: translate(-14.5rem, 32.5rem);
+    border-radius: 30px;  
+    background-color: var(--accent-color); 
+    font-family: Lexend, sans-serif; 
+    border: none; 
+    font-size: 1.2rem;
+    transition: 0.2s; 
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--white); 
+    border: 3px solid var(--accent-color); 
+}

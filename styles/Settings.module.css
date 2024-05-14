@@ -1,9 +1,9 @@
 .main {
   display: flex;
   justify-content: center;
-  background-color: var(--black-text);
   min-height: 100vh;
   margin: -10px;
+  color: var(--black); 
 }
 
 .screen {
@@ -33,6 +33,10 @@
   font-family: "Lexend", sans-serif; 
 }
 
+.profilePicture {
+  border-radius: 50%; 
+}
+
 .nav {
   background-color: var(--accent-color);
   height: 9rem;
@@ -60,6 +64,7 @@
   margin-left: -3rem; 
   margin-right: 1rem; 
   width: 13%; 
+  margin-top: 0.5rem; 
 }
 
 .listItem h5 {
@@ -124,4 +129,12 @@
 .profileDetails a{
   text-decoration: none;
   color: var(--black);
+}
+
+.profileDetails a:hover{
+  text-decoration: underline; 
+}
+
+.icon {
+  filter: var(--icon-filter);
 }

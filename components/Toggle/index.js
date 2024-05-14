@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactSwitch from 'react-switch';
 
-export default function ToggleSwitch() {
+export default function ToggleSwitch({ isEnabled, onChange }) {
   const [checked, setChecked] = useState(false);
 
   const handleChange = val => {
@@ -13,8 +13,8 @@ export default function ToggleSwitch() {
 
   return (
       <ReactSwitch
-        checked={checked}
-        onChange={handleChange}
+        checked={isEnabled}
+        onChange={onChange}
         onColor="#FEECAC"
         offColor="#FFE6E2"
         checkedIcon={false}

@@ -3,10 +3,10 @@
 .main {
   display: flex;
   justify-content: center;
-  background-color: var(--black-text);
   min-height: 140vh;
   margin: -10px;
   font-family: "Lexend", sans-serif; 
+  color: var(--black); 
 }
 
 .screen {
@@ -151,6 +151,7 @@
   font-size: 1.375rem;
   font-weight: 400;
   margin-left: 2rem;
+  color: var(--card-text); 
 }
 
 .latestNews img{
@@ -191,7 +192,7 @@
   font-size: 1.375rem; 
   font-weight: 500; 
   text-decoration: none; 
-  color: var(--black); 
+  color: var(--card-text); 
   width: 10rem; 
 }
 
@@ -226,6 +227,7 @@
   font-weight: 400;
   margin-left: 3rem;
   margin-top: -3rem; 
+  color: var(--card-text); 
 }
 
 .matching img{
@@ -259,7 +261,7 @@ border: 3px solid var(--teal);
 
 .matchingButton a{
   text-decoration: none;
-  color: var(--black);
+  color: var(--card-text); 
 }
 
 .adventure {
@@ -274,6 +276,7 @@ border: 3px solid var(--teal);
   transform: translate(0, 8rem); 
   margin-bottom: 5rem; 
   margin-top: -6rem; 
+  color: var(--card-text); 
 }
 
 .adventureText {
