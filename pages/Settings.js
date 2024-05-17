@@ -58,7 +58,7 @@ export default function Settings() {
               </div>
               <div className={styles.profileDetails}>
                 <h3>Anika</h3>
-                <button><Link href="/Profile">Edit Profile</Link></button>
+                <button style={{fontFamily:"var(--font)"}}><Link href="/Profile">Edit Profile</Link></button>
               </div>
             </section>
             <audio ref={audioRef} src="/music/Settings_BGM.mp3" loop />
@@ -119,7 +119,7 @@ export default function Settings() {
                   </form>
                 </li>
                 <li className={styles.listItem}>
-                <img src="/images/type_face.svg" alt="type face icon" className={styles.icon}/>
+                <img src="/images/type_face.svg" alt="type face icon" className={styles.icon} style={{filter:'none'}}/>
                   <div>
                     <h5>Font</h5>
                     <p>Switch to a different typeface</p>

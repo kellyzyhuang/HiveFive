@@ -4,6 +4,7 @@
     min-height: 100vh;
     margin: -10px;
     font-family: var(--font); 
+    color: var(--black); 
 }
  
 .screen {
@@ -52,4 +53,12 @@
 
 .speciesImages {
     margin-bottom: 3rem; 
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .main {
+        max-height: 600px; 
+    }
+
 }

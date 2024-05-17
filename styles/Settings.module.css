@@ -125,14 +125,19 @@
 .profileDetails button{
   background-color: inherit;
   border: none;
-  font-family: "Lexend", sans-serif;
+  font-family: var(--font); 
   font-weight: 300;
   transform: translate(-0.5rem, -1rem);
+}
+
+.editProfile {
+  font-family: var(--font); 
 }
 
 .profileDetails a{
   text-decoration: none;
   color: var(--black);
+  font-family: var(--font); 
 }
 
 .profileDetails a:hover{

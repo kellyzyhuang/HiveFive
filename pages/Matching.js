@@ -11,7 +11,7 @@ export default function Matching(){
             <Header title="Matching" backImage="/images/back.svg" link="/"/>
             <div className={styles.screen}>
                 <div className={styles.heading}>
-                    <h4>Select your category</h4>
+                    <h4 className={styles.category}>Select your category</h4>
                     <div className={styles.line}></div>
                 </div>
                 <div className={styles.plantSection}>

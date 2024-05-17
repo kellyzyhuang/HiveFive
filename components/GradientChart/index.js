@@ -22,8 +22,8 @@ export default function GradientChart() {
       const ctx = chart.ctx;
       const gradient = ctx.createLinearGradient(0, 0, 0, 400);
       gradient.addColorStop(0, 'rgba(255, 230, 226,1)');
-      gradient.addColorStop(0.5, 'rgba(244, 137, 120,0.2)');
-      gradient.addColorStop(1, 'rgba(244, 137, 120,0.2)');
+      gradient.addColorStop(0.9, 'rgba(255,250,205,0.2)');
+      gradient.addColorStop(1, 'rgba(255,250,205,0.2)');
 
       chart.data.datasets[0].backgroundColor = gradient;
       chart.data.datasets[0].pointStyle = pointImage; 
@@ -41,7 +41,7 @@ export default function GradientChart() {
         fill: true,
         borderColor: 'rgba(244, 137, 120,1)',
         tension: 0.1,
-        backgroundColor: 'rgba(244, 137, 120,0.2)',
+        backgroundColor: 'rgba(244, 130, 120,0.2)',
         pointStyle: pointImage, 
         pointRadius: 15
       },

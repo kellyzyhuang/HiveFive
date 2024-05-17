@@ -113,6 +113,7 @@
   margin-top: 1rem;
   transform: translate(0, 5rem);
   transition: 0.5s;  
+  color: var(--black-text); 
 }
 
 .quizButton:hover {
@@ -122,7 +123,7 @@
 
 .quizSection a{
   text-decoration: none;
-  color: var(--black);
+  color: var(--card-text);
 }
 
 .heading {

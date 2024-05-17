@@ -7,7 +7,7 @@
   z-index: 1000;
   display: flex;
   justify-content: center;
-  font-family: Lexend, sans-serif; 
+  font-family: var(--font); 
 }
 
 .list {
@@ -17,14 +17,15 @@
   align-items: center;
   padding: 0;
   width: 100%;
-  filter: var(--icon-filter);
+  font-family: var(--font); 
 }
 
 .pageTitle {
   font-size: 2rem;
   width: 100%;
-  font-family: "Lexend", sans-serif; 
+  font-family: var(--font); 
   transform: translate(1rem, 1.5rem); 
+  color: var(--black); 
 }
 
 .pointsCounter {
@@ -39,6 +40,7 @@
 
 .gemIcon {
   padding-left: -3rem; 
+  filter: none; 
 }
 
 .counter {
@@ -52,6 +54,7 @@
   justify-content: center;
   align-items: center; 
   margin-left: 0.5rem; 
+  filter: var(--icon-filter);
 }
 
 .settings a{
@@ -84,9 +87,14 @@
   color: var(--black);  
 }
 
+.menuImage {
+  filter: var(--icon-filter);
+}
+
 .exit {
   padding-left: 190px;
   margin: 1rem;
+  filter: var(--icon-filter);
 }
 
 .exit:hover {
@@ -95,6 +103,7 @@
 
 .exitIcon {
   transform: translate(0, 1.5rem); 
+  filter: var(--icon-filter);
 }
 
 .exitIcon {
@@ -103,6 +112,7 @@
 
 .backIcon {
   transform: translate(0, 1.5rem); 
+  filter: var(--icon-filter);
 }
 
 .navIcon {
