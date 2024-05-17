@@ -38,8 +38,8 @@ export default function Achievements(){
                     <h4>Complete tasks to earn achievements and unlock rewards to give Beenard a new look!</h4>
                 </div>
                 <div className={styles.buttons}>
-                    <button onClick={() => toggleContent('achievements')} className={styles.achievements} style={{ backgroundColor: achievementsActive ? 'var(--green)' : 'var(--light-green)' }}>Achievements</button>
-                    <button onClick={() => toggleContent('rewards')} className={styles.rewards} style={{ backgroundColor: rewardsActive ? 'var(--teal)' : 'var(--light-teal)' }}>Rewards</button>
+                    <button tabIndex={0} onClick={() => toggleContent('achievements')} className={styles.achievements} style={{ backgroundColor: achievementsActive ? 'var(--green)' : 'var(--light-green)' }}>Achievements</button>
+                    <button tabIndex={0} onClick={() => toggleContent('rewards')} className={styles.rewards} style={{ backgroundColor: rewardsActive ? 'var(--teal)' : 'var(--light-teal)' }}>Rewards</button>
                 </div>
                 {showRewards ? (
                     <div className={styles.rewardsContent}>

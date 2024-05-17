@@ -63,6 +63,7 @@ export default function Header({ title, backImage, link, exit }) {
               height={40} 
               alt="Hamburger icon" 
               className={styles.menuImage}
+              tabIndex={0}
             />
           </button>
         </li>
@@ -92,4 +93,4 @@ export default function Header({ title, backImage, link, exit }) {
       )}
     </header>
   );
-}
+} 
