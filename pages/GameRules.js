@@ -10,7 +10,7 @@ export default function GameRules() {
     return (
         <>
             <main className={`${styles.main}`}>
-                <Header title="Mini Adveture" backImage="/images/back.svg" link="/" />
+                <Header title="Mini Adventure" backImage="/images/back.svg" link="/" />
                 <div className={styles.screen}>
                     <div className={styles.buffer}></div>
                         <div className={styles.rules}>

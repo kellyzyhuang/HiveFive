@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import styles from "./AreaChart.module.css";
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -74,7 +75,7 @@ export default function AreaChart() {
   };
 
   return (
-    <div style={{ height: '20vh', width: '27vw' }}>
+    <div className={styles.chartContainer}>
       {pointImage && <Line data={data} options={options} />}
     </div>
   );

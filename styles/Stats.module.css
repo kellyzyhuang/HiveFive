@@ -97,3 +97,11 @@
   padding-right: 2rem; 
   position: absolute; 
 }
+
+@media only screen and (min-width: 1920px) {
+
+  .accuracy {
+    margin-top: 5rem; 
+  }
+
+}

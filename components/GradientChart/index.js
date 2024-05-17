@@ -49,7 +49,7 @@ export default function GradientChart() {
   };
 
   return (
-    <div style={{ height: '25vh', width: '40vw' }}>
+    <div className={styles.chartContainer}>
       <Line ref={chartRef} data={data} className={styles.chart} />
     </div>
   );

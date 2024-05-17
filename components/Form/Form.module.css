@@ -53,3 +53,12 @@
 .nameInput:focus, .userNameInput:focus, .emailInput:focus, .phoneNumberInput:focus, .passwordInput:focus{
     border: 2px solid var(--pink);
 }
+
+@media only screen and (min-width: 1920px) {
+
+    .formOuterContainer {
+        position: absolute; 
+        margin-top: 18rem; 
+    }
+  
+  }

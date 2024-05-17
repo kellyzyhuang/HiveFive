@@ -58,3 +58,20 @@
 .sponsors {
   margin-bottom: 10rem; 
 }
+
+.sponsors img {
+  padding-right: 1rem; 
+  padding-left: 1rem; 
+}
+
+@media only screen and (min-width: 1920px) {
+
+  .line {
+    width: 16%; 
+  }
+
+  .screen {
+    height: 1000px; 
+  }
+
+}

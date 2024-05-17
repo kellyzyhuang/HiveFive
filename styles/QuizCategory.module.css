@@ -132,3 +132,19 @@
 .button:hover {
   padding-left: 1rem; 
 }
+
+@media only screen and (min-width: 1920px) {
+
+  .screen {
+    min-height: 1000px; 
+  }
+
+  .triviaSection {
+    margin-top: -5rem; 
+  }
+
+  .line {
+    margin-bottom: -2rem; 
+  }
+
+}

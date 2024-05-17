@@ -56,7 +56,7 @@ export default function Stats() {
               <div className={styles.graph}>
                 <AreaChart/>
               </div>
-              <h3>Accuracy Over Time</h3>
+              <h3 className={styles.accuracy}>Accuracy Over Time</h3>
               <div className={styles.graph}>
                 <GradientChart/>
               </div>
