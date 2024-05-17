@@ -67,11 +67,15 @@
     border-radius: 1.875rem;
 }
 
+.articlesImage {
+    padding-left: 1rem; 
+}
+
 .articlesSection button{
     background-color: inherit;
     border: none;
     border-radius: 1.875rem;
-    transform: translate(6.5rem, 3rem);
+    transform: translate(7.5rem, 1rem);
 }
 
 .textArticles, .textTeam{
@@ -105,7 +109,7 @@
     background-color: inherit;
     border: none;
     border-radius: 1.875rem;
-    transform: translate(7rem, 3rem);
+    transform: translate(7.5rem, 3rem);
 }
 
 .button {
@@ -116,3 +120,10 @@
     padding-left: 1rem; 
 }
 
+.textBtnArticles {
+    line-height: 1.5rem; 
+}
+
+.textBtnArticles h3 {
+    margin-bottom: -0.5rem; 
+}

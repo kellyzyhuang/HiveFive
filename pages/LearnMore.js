@@ -25,11 +25,11 @@ export default function LearnMore(){
                         </div> 
                     </div>
                     <div className={styles.articlesSection}>
-                        <Image src="/images/article2.svg" alt="camping tent in a forest" width={160} height={123}/>
+                        <Image src="/images/article2.svg" alt="camping tent in a forest" width={160} height={123} className={styles.articlesImage}/>
                         <div className={styles.textArticles}>
                             <div className={styles.textBtnArticles}>
                                 <h3>Articles</h3>
-                                <p>Read the latest news!</p>
+                                <p>Read the latest bee and environment news!</p>
                             </div>
                             <button>
                                 <Link href="/Learn">

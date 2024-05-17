@@ -18,7 +18,7 @@ export default function Matching(){
                     <Image src="/images/plants2.svg" alt="plants in watering can" width={141} height={169}/>
                     <div className={styles.textBtnPlants}>
                         <h3>Plants</h3>
-                        <p>Explore the Plant Matches for Bees!</p>
+                        <p>Explore the various plants that bees need to survive!</p>
                         <button>
                             <Link href="/Plants">
                                 <Image className={styles.button} src="/images/next_arrow_teal.svg" alt="teal next arrow" width={50} height={50}/>
@@ -30,7 +30,7 @@ export default function Matching(){
                     <Image src="/images/species.svg" alt="bee infont of hexagon shapes" width={157} height={123}/>
                     <div className={styles.textBtnSpecies}>
                         <h3>Species</h3>
-                        <p>Help Identify the Bees!</p>
+                        <p>Identify and learn about different bee species!</p>
                         <button>
                             <Link href="/Species">
                                 <Image className={styles.button} src="/images/next_arrow_teal.svg" alt="teal next arrow" width={50} height={50}/>
